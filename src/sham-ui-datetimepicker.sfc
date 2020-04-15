@@ -1,0 +1,20 @@
+<template>
+
+</template>
+
+<script>
+    import { mergeWithTemplate, options } from 'sham-ui-macro/babel.macro';
+
+    @mergeWithTemplate
+    class DateTimePicker extends Template {
+        @options value = new Date();
+        @options onChange = () => {};
+        @options showTime = true;
+        @options disabled = false;
+        @options isDateSelectable = () => true;
+
+        @options currentMode = 'month'
+    }
+
+    export default DateTimePicker;
+</script>
