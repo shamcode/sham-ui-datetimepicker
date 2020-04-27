@@ -33,7 +33,9 @@ module.exports = {
         libraryTarget: 'umd'
     },
     externals: [
-        'sham-ui'
+        'sham-ui',
+        'sham-ui-directives',
+        'sham-ui-dynamic-component'
     ],
     plugins: plugins,
     module: {

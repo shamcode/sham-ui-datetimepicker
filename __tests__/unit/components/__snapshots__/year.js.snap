@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change 1`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 10,
+    "prevDelta": -10,
+    "select": [Function],
+    "showChange": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th><span>◂</span></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2015 - 2026</th>
+    <th><span>▸</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"year\\">2015</span><span class=\\"year\\">2016</span><span class=\\"year\\">2017</span><span class=\\"year\\">2018</span><span class=\\"year\\">2019</span><span class=\\"year active\\">2020</span><span class=\\"year disabled\\">2021</span><span class=\\"year disabled\\">2022</span><span class=\\"year disabled\\">2023</span><span class=\\"year disabled\\">2024</span><span class=\\"year disabled\\">2025</span><span class=\\"year disabled\\">2026</span></td>
+  </tr>
+</tbody>
+",
+}
+`;
+
+exports[`change 2`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 10,
+    "prevDelta": -10,
+    "select": [Function],
+    "showChange": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th><span>◂</span></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2015 - 2026</th>
+    <th><span>▸</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"year\\">2015</span><span class=\\"year\\">2016</span><span class=\\"year\\">2017</span><span class=\\"year\\">2018</span><span class=\\"year\\">2019</span><span class=\\"year active\\">2020</span><span class=\\"year disabled\\">2021</span><span class=\\"year disabled\\">2022</span><span class=\\"year disabled\\">2023</span><span class=\\"year disabled\\">2024</span><span class=\\"year disabled\\">2025</span><span class=\\"year disabled\\">2026</span></td>
+  </tr>
+</tbody>
+",
+}
+`;
+
+exports[`change 3`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 10,
+    "prevDelta": -10,
+    "select": [Function],
+    "showChange": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th><span>◂</span></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2015 - 2026</th>
+    <th><span>▸</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"year\\">2015</span><span class=\\"year\\">2016</span><span class=\\"year\\">2017</span><span class=\\"year\\">2018</span><span class=\\"year\\">2019</span><span class=\\"year active\\">2020</span><span class=\\"year disabled\\">2021</span><span class=\\"year disabled\\">2022</span><span class=\\"year disabled\\">2023</span><span class=\\"year disabled\\">2024</span><span class=\\"year disabled\\">2025</span><span class=\\"year disabled\\">2026</span></td>
+  </tr>
+</tbody>
+",
+}
+`;
+
+exports[`renders correctly 1`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 10,
+    "prevDelta": -10,
+    "select": [Function],
+    "showChange": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th><span>◂</span></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2015 - 2026</th>
+    <th><span>▸</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"year\\">2015</span><span class=\\"year\\">2016</span><span class=\\"year\\">2017</span><span class=\\"year\\">2018</span><span class=\\"year\\">2019</span><span class=\\"year active\\">2020</span><span class=\\"year\\">2021</span><span class=\\"year\\">2022</span><span class=\\"year\\">2023</span><span class=\\"year\\">2024</span><span class=\\"year\\">2025</span><span class=\\"year\\">2026</span></td>
+  </tr>
+</tbody>
+",
+}
+`;

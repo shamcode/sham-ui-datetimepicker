@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change 1`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 100,
+    "prevDelta": -100,
+    "select": [Function],
+    "showChange": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th><span>◂</span></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">1999 - 2099</th>
+    <th><span>▸</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"decade\\">2000 - 2009</span><span class=\\"decade\\">2010 - 2019</span><span class=\\"decade active\\">2020 - 2029</span><span class=\\"decade\\">2030 - 2039</span><span class=\\"decade\\">2040 - 2049</span><span class=\\"decade\\">2050 - 2059</span><span class=\\"decade\\">2060 - 2069</span><span class=\\"decade\\">2070 - 2079</span><span class=\\"decade\\">2080 - 2089</span><span class=\\"decade\\">2090 - 2099</span></td>
+  </tr>
+</tbody>
+",
+}
+`;
+
+exports[`change 2`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 100,
+    "prevDelta": -100,
+    "select": [Function],
+    "showChange": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th><span>◂</span></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">1999 - 2099</th>
+    <th><span>▸</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"decade\\">2000 - 2009</span><span class=\\"decade\\">2010 - 2019</span><span class=\\"decade active\\">2020 - 2029</span><span class=\\"decade\\">2030 - 2039</span><span class=\\"decade\\">2040 - 2049</span><span class=\\"decade\\">2050 - 2059</span><span class=\\"decade\\">2060 - 2069</span><span class=\\"decade\\">2070 - 2079</span><span class=\\"decade\\">2080 - 2089</span><span class=\\"decade\\">2090 - 2099</span></td>
+  </tr>
+</tbody>
+",
+}
+`;
+
+exports[`renders correctly 1`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 100,
+    "prevDelta": -100,
+    "select": [Function],
+    "showChange": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th><span>◂</span></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">1999 - 2099</th>
+    <th><span>▸</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"decade\\">2000 - 2009</span><span class=\\"decade\\">2010 - 2019</span><span class=\\"decade active\\">2020 - 2029</span><span class=\\"decade\\">2030 - 2039</span><span class=\\"decade\\">2040 - 2049</span><span class=\\"decade\\">2050 - 2059</span><span class=\\"decade\\">2060 - 2069</span><span class=\\"decade\\">2070 - 2079</span><span class=\\"decade\\">2080 - 2089</span><span class=\\"decade\\">2090 - 2099</span></td>
+  </tr>
+</tbody>
+",
+}
+`;

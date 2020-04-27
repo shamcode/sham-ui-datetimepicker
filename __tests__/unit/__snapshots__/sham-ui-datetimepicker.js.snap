@@ -1,0 +1,1117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change month & time 1`] = `
+Object {
+  "Constructor": "DateTimePicker",
+  "Options": Object {
+    "ID": "component",
+    "classForDate": [Function],
+    "componentsByMode": Object {
+      "dom": Array [
+        [Function],
+        [Function],
+      ],
+      "hours": Array [
+        [Function],
+        [Function],
+      ],
+      "minutes": Array [
+        [Function],
+        [Function],
+      ],
+      "months": Array [
+        [Function],
+        [Function],
+      ],
+      "seconds": Array [
+        [Function],
+        [Function],
+      ],
+      "time": Array [
+        [Function],
+        [Function],
+      ],
+      "year": Array [
+        [Function],
+        [Function],
+      ],
+      "yearRange": Array [
+        [Function],
+        [Function],
+      ],
+    },
+    "date": 2020-05-14T18:00:59.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "displayMode": "time",
+    "isDateSelectable": [Function],
+    "onChange": [MockFunction] {
+      "calls": Array [
+        Array [
+          2020-05-14T17:00:00.000Z,
+        ],
+        Array [
+          2020-05-14T18:00:00.000Z,
+        ],
+        Array [
+          2020-05-14T18:01:00.000Z,
+        ],
+        Array [
+          2020-05-14T18:00:59.000Z,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "showTime": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-05-14T18:00:59.000Z,
+  },
+  "html": "
+<table class=\\"sham-ui-datetimepicker\\">
+  <thead>
+    <tr>
+      <th colspan=\\"5\\" class=\\"picker-switch\\">2020 M05 15, Fri</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class=\\"change\\"><span>+</span></td>
+      <td></td>
+      <td class=\\"change\\"><span>+</span></td>
+      <td></td>
+      <td class=\\"change\\"><span>+</span></td>
+    </tr>
+    <tr>
+      <td class=\\"hour\\">01</td>
+      <td>:</td>
+      <td class=\\"minute\\">0</td>
+      <td>:</td>
+      <td class=\\"second\\">59</td>
+    </tr>
+    <tr>
+      <td class=\\"change\\"><span>–</span></td>
+      <td></td>
+      <td class=\\"change\\"><span>–</span></td>
+      <td></td>
+      <td class=\\"change\\"><span>–</span></td>
+    </tr>
+  </tbody>
+</table>
+",
+}
+`;
+
+exports[`change month & time 2`] = `
+Object {
+  "Constructor": "DateTimePicker",
+  "Options": Object {
+    "ID": "component",
+    "classForDate": [Function],
+    "componentsByMode": Object {
+      "dom": Array [
+        [Function],
+        [Function],
+      ],
+      "hours": Array [
+        [Function],
+        [Function],
+      ],
+      "minutes": Array [
+        [Function],
+        [Function],
+      ],
+      "months": Array [
+        [Function],
+        [Function],
+      ],
+      "seconds": Array [
+        [Function],
+        [Function],
+      ],
+      "time": Array [
+        [Function],
+        [Function],
+      ],
+      "year": Array [
+        [Function],
+        [Function],
+      ],
+      "yearRange": Array [
+        [Function],
+        [Function],
+      ],
+    },
+    "date": 2020-05-14T18:00:59.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "displayMode": "dom",
+    "isDateSelectable": [Function],
+    "onChange": [MockFunction] {
+      "calls": Array [
+        Array [
+          2020-05-14T17:00:00.000Z,
+        ],
+        Array [
+          2020-05-14T18:00:00.000Z,
+        ],
+        Array [
+          2020-05-14T18:01:00.000Z,
+        ],
+        Array [
+          2020-05-14T18:00:59.000Z,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "showTime": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-05-14T18:00:59.000Z,
+  },
+  "html": "
+<table class=\\"sham-ui-datetimepicker\\">
+  <thead>
+    <tr>
+      <th><span>◂</span></th>
+      <th colspan=\\"5\\" class=\\"picker-switch\\">2020 ├F3: M05┤</th>
+      <th><span>▸</span></th>
+    </tr>
+    <tr>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+      <th>Sun</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class=\\"day other-month\\">27</td>
+      <td class=\\"day other-month\\">28</td>
+      <td class=\\"day other-month\\">29</td>
+      <td class=\\"day other-month\\">30</td>
+      <td class=\\"day\\">1</td>
+      <td class=\\"day\\">2</td>
+      <td class=\\"day\\">3</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">4</td>
+      <td class=\\"day\\">5</td>
+      <td class=\\"day\\">6</td>
+      <td class=\\"day\\">7</td>
+      <td class=\\"day\\">8</td>
+      <td class=\\"day\\">9</td>
+      <td class=\\"day\\">10</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">11</td>
+      <td class=\\"day\\">12</td>
+      <td class=\\"day\\">13</td>
+      <td class=\\"day\\">14</td>
+      <td class=\\"day active\\">15</td>
+      <td class=\\"day\\">16</td>
+      <td class=\\"day\\">17</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">18</td>
+      <td class=\\"day\\">19</td>
+      <td class=\\"day\\">20</td>
+      <td class=\\"day\\">21</td>
+      <td class=\\"day\\">22</td>
+      <td class=\\"day\\">23</td>
+      <td class=\\"day\\">24</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">25</td>
+      <td class=\\"day\\">26</td>
+      <td class=\\"day\\">27</td>
+      <td class=\\"day\\">28</td>
+      <td class=\\"day\\">29</td>
+      <td class=\\"day\\">30</td>
+      <td class=\\"day\\">31</td>
+    </tr>
+    <tr>
+      <td class=\\"day other-month\\">1</td>
+      <td class=\\"day other-month\\">2</td>
+      <td class=\\"day other-month\\">3</td>
+      <td class=\\"day other-month\\">4</td>
+      <td class=\\"day other-month\\">5</td>
+      <td class=\\"day other-month\\">6</td>
+      <td class=\\"day other-month\\">7</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan=\\"7\\">01:00:59</th>
+    </tr>
+  </tfoot>
+  <!--if-->
+</table>
+",
+}
+`;
+
+exports[`classForDate 1`] = `
+Object {
+  "Constructor": "DateTimePicker",
+  "Options": Object {
+    "ID": "component",
+    "classForDate": [Function],
+    "componentsByMode": Object {
+      "dom": Array [
+        [Function],
+        [Function],
+      ],
+      "hours": Array [
+        [Function],
+        [Function],
+      ],
+      "minutes": Array [
+        [Function],
+        [Function],
+      ],
+      "months": Array [
+        [Function],
+        [Function],
+      ],
+      "seconds": Array [
+        [Function],
+        [Function],
+      ],
+      "time": Array [
+        [Function],
+        [Function],
+      ],
+      "year": Array [
+        [Function],
+        [Function],
+      ],
+      "yearRange": Array [
+        [Function],
+        [Function],
+      ],
+    },
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "displayMode": "dom",
+    "isDateSelectable": [Function],
+    "onChange": [Function],
+    "showTime": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<table class=\\"sham-ui-datetimepicker\\">
+  <thead>
+    <tr>
+      <th><span>◂</span></th>
+      <th colspan=\\"5\\" class=\\"picker-switch\\">2020 ├F3: M04┤</th>
+      <th><span>▸</span></th>
+    </tr>
+    <tr>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+      <th>Sun</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class=\\"day other-month\\">30</td>
+      <td class=\\"day other-month\\">31</td>
+      <td class=\\"day\\">1</td>
+      <td class=\\"day\\">2</td>
+      <td class=\\"day\\">3</td>
+      <td class=\\"day\\">4</td>
+      <td class=\\"day\\">5</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">6</td>
+      <td class=\\"day\\">7</td>
+      <td class=\\"day\\">8</td>
+      <td class=\\"day\\">9</td>
+      <td class=\\"day\\">10</td>
+      <td class=\\"day\\">11</td>
+      <td class=\\"day\\">12</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">13</td>
+      <td class=\\"day\\">14</td>
+      <td class=\\"day\\">15</td>
+      <td class=\\"day range\\">16</td>
+      <td class=\\"day range\\">17</td>
+      <td class=\\"day range\\">18</td>
+      <td class=\\"day range\\">19</td>
+    </tr>
+    <tr>
+      <td class=\\"day range\\">20</td>
+      <td class=\\"day range\\">21</td>
+      <td class=\\"day range\\">22</td>
+      <td class=\\"day range active\\">23</td>
+      <td class=\\"day range\\">24</td>
+      <td class=\\"day range today\\">25</td>
+      <td class=\\"day range\\">26</td>
+    </tr>
+    <tr>
+      <td class=\\"day range\\">27</td>
+      <td class=\\"day range\\">28</td>
+      <td class=\\"day range\\">29</td>
+      <td class=\\"day\\">30</td>
+      <td class=\\"day other-month\\">1</td>
+      <td class=\\"day other-month\\">2</td>
+      <td class=\\"day other-month\\">3</td>
+    </tr>
+    <tr>
+      <td class=\\"day other-month\\">4</td>
+      <td class=\\"day other-month\\">5</td>
+      <td class=\\"day other-month\\">6</td>
+      <td class=\\"day other-month\\">7</td>
+      <td class=\\"day other-month\\">8</td>
+      <td class=\\"day other-month\\">9</td>
+      <td class=\\"day other-month\\">10</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan=\\"7\\">13:02:17</th>
+    </tr>
+  </tfoot>
+  <!--if-->
+</table>
+",
+}
+`;
+
+exports[`default onChange 1`] = `
+Object {
+  "Constructor": "DateTimePicker",
+  "Options": Object {
+    "ID": "component",
+    "classForDate": [Function],
+    "componentsByMode": Object {
+      "dom": Array [
+        [Function],
+        [Function],
+      ],
+      "hours": Array [
+        [Function],
+        [Function],
+      ],
+      "minutes": Array [
+        [Function],
+        [Function],
+      ],
+      "months": Array [
+        [Function],
+        [Function],
+      ],
+      "seconds": Array [
+        [Function],
+        [Function],
+      ],
+      "time": Array [
+        [Function],
+        [Function],
+      ],
+      "year": Array [
+        [Function],
+        [Function],
+      ],
+      "yearRange": Array [
+        [Function],
+        [Function],
+      ],
+    },
+    "date": 2020-04-16T17:00:00.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "displayMode": "dom",
+    "isDateSelectable": [Function],
+    "onChange": [Function],
+    "showTime": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<table class=\\"sham-ui-datetimepicker\\">
+  <thead>
+    <tr>
+      <th><span>◂</span></th>
+      <th colspan=\\"5\\" class=\\"picker-switch\\">2020 ├F3: M04┤</th>
+      <th><span>▸</span></th>
+    </tr>
+    <tr>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+      <th>Sun</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class=\\"day other-month\\">30</td>
+      <td class=\\"day other-month\\">31</td>
+      <td class=\\"day\\">1</td>
+      <td class=\\"day\\">2</td>
+      <td class=\\"day\\">3</td>
+      <td class=\\"day\\">4</td>
+      <td class=\\"day\\">5</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">6</td>
+      <td class=\\"day\\">7</td>
+      <td class=\\"day\\">8</td>
+      <td class=\\"day\\">9</td>
+      <td class=\\"day\\">10</td>
+      <td class=\\"day\\">11</td>
+      <td class=\\"day\\">12</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">13</td>
+      <td class=\\"day\\">14</td>
+      <td class=\\"day\\">15</td>
+      <td class=\\"day\\">16</td>
+      <td class=\\"day\\">17</td>
+      <td class=\\"day\\">18</td>
+      <td class=\\"day\\">19</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">20</td>
+      <td class=\\"day\\">21</td>
+      <td class=\\"day\\">22</td>
+      <td class=\\"day active\\">23</td>
+      <td class=\\"day\\">24</td>
+      <td class=\\"day today\\">25</td>
+      <td class=\\"day\\">26</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">27</td>
+      <td class=\\"day\\">28</td>
+      <td class=\\"day\\">29</td>
+      <td class=\\"day\\">30</td>
+      <td class=\\"day other-month\\">1</td>
+      <td class=\\"day other-month\\">2</td>
+      <td class=\\"day other-month\\">3</td>
+    </tr>
+    <tr>
+      <td class=\\"day other-month\\">4</td>
+      <td class=\\"day other-month\\">5</td>
+      <td class=\\"day other-month\\">6</td>
+      <td class=\\"day other-month\\">7</td>
+      <td class=\\"day other-month\\">8</td>
+      <td class=\\"day other-month\\">9</td>
+      <td class=\\"day other-month\\">10</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan=\\"7\\">13:02:17</th>
+    </tr>
+  </tfoot>
+  <!--if-->
+</table>
+",
+}
+`;
+
+exports[`isDateSelectable options 1`] = `
+Object {
+  "Constructor": "DateTimePicker",
+  "Options": Object {
+    "ID": "component",
+    "classForDate": [Function],
+    "componentsByMode": Object {
+      "dom": Array [
+        [Function],
+        [Function],
+      ],
+      "hours": Array [
+        [Function],
+        [Function],
+      ],
+      "minutes": Array [
+        [Function],
+        [Function],
+      ],
+      "months": Array [
+        [Function],
+        [Function],
+      ],
+      "seconds": Array [
+        [Function],
+        [Function],
+      ],
+      "time": Array [
+        [Function],
+        [Function],
+      ],
+      "year": Array [
+        [Function],
+        [Function],
+      ],
+      "yearRange": Array [
+        [Function],
+        [Function],
+      ],
+    },
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "displayMode": "dom",
+    "isDateSelectable": [Function],
+    "onChange": [Function],
+    "showTime": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<table class=\\"sham-ui-datetimepicker\\">
+  <thead>
+    <tr>
+      <th><span>◂</span></th>
+      <th colspan=\\"5\\" class=\\"picker-switch\\">2020 ├F3: M04┤</th>
+      <th><span>▸</span></th>
+    </tr>
+    <tr>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+      <th>Sun</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class=\\"day other-month disabled\\">30</td>
+      <td class=\\"day other-month disabled\\">31</td>
+      <td class=\\"day\\">1</td>
+      <td class=\\"day\\">2</td>
+      <td class=\\"day\\">3</td>
+      <td class=\\"day\\">4</td>
+      <td class=\\"day\\">5</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">6</td>
+      <td class=\\"day\\">7</td>
+      <td class=\\"day\\">8</td>
+      <td class=\\"day\\">9</td>
+      <td class=\\"day\\">10</td>
+      <td class=\\"day\\">11</td>
+      <td class=\\"day\\">12</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">13</td>
+      <td class=\\"day\\">14</td>
+      <td class=\\"day\\">15</td>
+      <td class=\\"day\\">16</td>
+      <td class=\\"day\\">17</td>
+      <td class=\\"day\\">18</td>
+      <td class=\\"day\\">19</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">20</td>
+      <td class=\\"day\\">21</td>
+      <td class=\\"day\\">22</td>
+      <td class=\\"day active\\">23</td>
+      <td class=\\"day\\">24</td>
+      <td class=\\"day today\\">25</td>
+      <td class=\\"day\\">26</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">27</td>
+      <td class=\\"day\\">28</td>
+      <td class=\\"day\\">29</td>
+      <td class=\\"day\\">30</td>
+      <td class=\\"day other-month disabled\\">1</td>
+      <td class=\\"day other-month disabled\\">2</td>
+      <td class=\\"day other-month disabled\\">3</td>
+    </tr>
+    <tr>
+      <td class=\\"day other-month disabled\\">4</td>
+      <td class=\\"day other-month disabled\\">5</td>
+      <td class=\\"day other-month disabled\\">6</td>
+      <td class=\\"day other-month disabled\\">7</td>
+      <td class=\\"day other-month disabled\\">8</td>
+      <td class=\\"day other-month disabled\\">9</td>
+      <td class=\\"day other-month disabled\\">10</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan=\\"7\\">13:02:17</th>
+    </tr>
+  </tfoot>
+  <!--if-->
+</table>
+",
+}
+`;
+
+exports[`onChange 1`] = `
+Object {
+  "Constructor": "DateTimePicker",
+  "Options": Object {
+    "ID": "component",
+    "classForDate": [Function],
+    "componentsByMode": Object {
+      "dom": Array [
+        [Function],
+        [Function],
+      ],
+      "hours": Array [
+        [Function],
+        [Function],
+      ],
+      "minutes": Array [
+        [Function],
+        [Function],
+      ],
+      "months": Array [
+        [Function],
+        [Function],
+      ],
+      "seconds": Array [
+        [Function],
+        [Function],
+      ],
+      "time": Array [
+        [Function],
+        [Function],
+      ],
+      "year": Array [
+        [Function],
+        [Function],
+      ],
+      "yearRange": Array [
+        [Function],
+        [Function],
+      ],
+    },
+    "date": 2020-04-16T17:00:00.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "displayMode": "dom",
+    "isDateSelectable": [Function],
+    "onChange": [MockFunction] {
+      "calls": Array [
+        Array [
+          2020-04-16T17:00:00.000Z,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "showTime": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-16T17:00:00.000Z,
+  },
+  "html": "
+<table class=\\"sham-ui-datetimepicker\\">
+  <thead>
+    <tr>
+      <th><span>◂</span></th>
+      <th colspan=\\"5\\" class=\\"picker-switch\\">2020 ├F3: M04┤</th>
+      <th><span>▸</span></th>
+    </tr>
+    <tr>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+      <th>Sun</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class=\\"day other-month\\">30</td>
+      <td class=\\"day other-month\\">31</td>
+      <td class=\\"day\\">1</td>
+      <td class=\\"day\\">2</td>
+      <td class=\\"day\\">3</td>
+      <td class=\\"day\\">4</td>
+      <td class=\\"day\\">5</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">6</td>
+      <td class=\\"day\\">7</td>
+      <td class=\\"day\\">8</td>
+      <td class=\\"day\\">9</td>
+      <td class=\\"day\\">10</td>
+      <td class=\\"day\\">11</td>
+      <td class=\\"day\\">12</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">13</td>
+      <td class=\\"day\\">14</td>
+      <td class=\\"day\\">15</td>
+      <td class=\\"day\\">16</td>
+      <td class=\\"day active\\">17</td>
+      <td class=\\"day\\">18</td>
+      <td class=\\"day\\">19</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">20</td>
+      <td class=\\"day\\">21</td>
+      <td class=\\"day\\">22</td>
+      <td class=\\"day\\">23</td>
+      <td class=\\"day\\">24</td>
+      <td class=\\"day today\\">25</td>
+      <td class=\\"day\\">26</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">27</td>
+      <td class=\\"day\\">28</td>
+      <td class=\\"day\\">29</td>
+      <td class=\\"day\\">30</td>
+      <td class=\\"day other-month\\">1</td>
+      <td class=\\"day other-month\\">2</td>
+      <td class=\\"day other-month\\">3</td>
+    </tr>
+    <tr>
+      <td class=\\"day other-month\\">4</td>
+      <td class=\\"day other-month\\">5</td>
+      <td class=\\"day other-month\\">6</td>
+      <td class=\\"day other-month\\">7</td>
+      <td class=\\"day other-month\\">8</td>
+      <td class=\\"day other-month\\">9</td>
+      <td class=\\"day other-month\\">10</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan=\\"7\\">00:00:00</th>
+    </tr>
+  </tfoot>
+  <!--if-->
+</table>
+",
+}
+`;
+
+exports[`onChange for not allowed 1`] = `
+Object {
+  "Constructor": "DateTimePicker",
+  "Options": Object {
+    "ID": "component",
+    "classForDate": [Function],
+    "componentsByMode": Object {
+      "dom": Array [
+        [Function],
+        [Function],
+      ],
+      "hours": Array [
+        [Function],
+        [Function],
+      ],
+      "minutes": Array [
+        [Function],
+        [Function],
+      ],
+      "months": Array [
+        [Function],
+        [Function],
+      ],
+      "seconds": Array [
+        [Function],
+        [Function],
+      ],
+      "time": Array [
+        [Function],
+        [Function],
+      ],
+      "year": Array [
+        [Function],
+        [Function],
+      ],
+      "yearRange": Array [
+        [Function],
+        [Function],
+      ],
+    },
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "displayMode": "dom",
+    "isDateSelectable": [Function],
+    "onChange": [MockFunction],
+    "showTime": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<table class=\\"sham-ui-datetimepicker\\">
+  <thead>
+    <tr>
+      <th><span>◂</span></th>
+      <th colspan=\\"5\\" class=\\"picker-switch\\">2020 ├F3: M04┤</th>
+      <th><span>▸</span></th>
+    </tr>
+    <tr>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+      <th>Sun</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class=\\"day other-month disabled\\">30</td>
+      <td class=\\"day other-month disabled\\">31</td>
+      <td class=\\"day disabled\\">1</td>
+      <td class=\\"day disabled\\">2</td>
+      <td class=\\"day disabled\\">3</td>
+      <td class=\\"day disabled\\">4</td>
+      <td class=\\"day disabled\\">5</td>
+    </tr>
+    <tr>
+      <td class=\\"day disabled\\">6</td>
+      <td class=\\"day disabled\\">7</td>
+      <td class=\\"day disabled\\">8</td>
+      <td class=\\"day disabled\\">9</td>
+      <td class=\\"day disabled\\">10</td>
+      <td class=\\"day disabled\\">11</td>
+      <td class=\\"day disabled\\">12</td>
+    </tr>
+    <tr>
+      <td class=\\"day disabled\\">13</td>
+      <td class=\\"day disabled\\">14</td>
+      <td class=\\"day disabled\\">15</td>
+      <td class=\\"day disabled\\">16</td>
+      <td class=\\"day disabled\\">17</td>
+      <td class=\\"day disabled\\">18</td>
+      <td class=\\"day disabled\\">19</td>
+    </tr>
+    <tr>
+      <td class=\\"day disabled\\">20</td>
+      <td class=\\"day disabled\\">21</td>
+      <td class=\\"day disabled\\">22</td>
+      <td class=\\"day active disabled\\">23</td>
+      <td class=\\"day disabled\\">24</td>
+      <td class=\\"day today disabled\\">25</td>
+      <td class=\\"day disabled\\">26</td>
+    </tr>
+    <tr>
+      <td class=\\"day disabled\\">27</td>
+      <td class=\\"day disabled\\">28</td>
+      <td class=\\"day disabled\\">29</td>
+      <td class=\\"day disabled\\">30</td>
+      <td class=\\"day other-month disabled\\">1</td>
+      <td class=\\"day other-month disabled\\">2</td>
+      <td class=\\"day other-month disabled\\">3</td>
+    </tr>
+    <tr>
+      <td class=\\"day other-month disabled\\">4</td>
+      <td class=\\"day other-month disabled\\">5</td>
+      <td class=\\"day other-month disabled\\">6</td>
+      <td class=\\"day other-month disabled\\">7</td>
+      <td class=\\"day other-month disabled\\">8</td>
+      <td class=\\"day other-month disabled\\">9</td>
+      <td class=\\"day other-month disabled\\">10</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan=\\"7\\">13:02:17</th>
+    </tr>
+  </tfoot>
+  <!--if-->
+</table>
+",
+}
+`;
+
+exports[`renders correctly 1`] = `
+Object {
+  "Constructor": "DateTimePicker",
+  "Options": Object {
+    "ID": "component",
+    "classForDate": [Function],
+    "componentsByMode": Object {
+      "dom": Array [
+        [Function],
+        [Function],
+      ],
+      "hours": Array [
+        [Function],
+        [Function],
+      ],
+      "minutes": Array [
+        [Function],
+        [Function],
+      ],
+      "months": Array [
+        [Function],
+        [Function],
+      ],
+      "seconds": Array [
+        [Function],
+        [Function],
+      ],
+      "time": Array [
+        [Function],
+        [Function],
+      ],
+      "year": Array [
+        [Function],
+        [Function],
+      ],
+      "yearRange": Array [
+        [Function],
+        [Function],
+      ],
+    },
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "displayMode": "dom",
+    "isDateSelectable": [Function],
+    "onChange": [Function],
+    "showTime": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<table class=\\"sham-ui-datetimepicker\\">
+  <thead>
+    <tr>
+      <th><span>◂</span></th>
+      <th colspan=\\"5\\" class=\\"picker-switch\\">2020 ├F3: M04┤</th>
+      <th><span>▸</span></th>
+    </tr>
+    <tr>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+      <th>Sat</th>
+      <th>Sun</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class=\\"day other-month\\">30</td>
+      <td class=\\"day other-month\\">31</td>
+      <td class=\\"day\\">1</td>
+      <td class=\\"day\\">2</td>
+      <td class=\\"day\\">3</td>
+      <td class=\\"day\\">4</td>
+      <td class=\\"day\\">5</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">6</td>
+      <td class=\\"day\\">7</td>
+      <td class=\\"day\\">8</td>
+      <td class=\\"day\\">9</td>
+      <td class=\\"day\\">10</td>
+      <td class=\\"day\\">11</td>
+      <td class=\\"day\\">12</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">13</td>
+      <td class=\\"day\\">14</td>
+      <td class=\\"day\\">15</td>
+      <td class=\\"day\\">16</td>
+      <td class=\\"day\\">17</td>
+      <td class=\\"day\\">18</td>
+      <td class=\\"day\\">19</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">20</td>
+      <td class=\\"day\\">21</td>
+      <td class=\\"day\\">22</td>
+      <td class=\\"day active\\">23</td>
+      <td class=\\"day\\">24</td>
+      <td class=\\"day today\\">25</td>
+      <td class=\\"day\\">26</td>
+    </tr>
+    <tr>
+      <td class=\\"day\\">27</td>
+      <td class=\\"day\\">28</td>
+      <td class=\\"day\\">29</td>
+      <td class=\\"day\\">30</td>
+      <td class=\\"day other-month\\">1</td>
+      <td class=\\"day other-month\\">2</td>
+      <td class=\\"day other-month\\">3</td>
+    </tr>
+    <tr>
+      <td class=\\"day other-month\\">4</td>
+      <td class=\\"day other-month\\">5</td>
+      <td class=\\"day other-month\\">6</td>
+      <td class=\\"day other-month\\">7</td>
+      <td class=\\"day other-month\\">8</td>
+      <td class=\\"day other-month\\">9</td>
+      <td class=\\"day other-month\\">10</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan=\\"7\\">13:02:17</th>
+    </tr>
+  </tfoot>
+  <!--if-->
+</table>
+",
+}
+`;

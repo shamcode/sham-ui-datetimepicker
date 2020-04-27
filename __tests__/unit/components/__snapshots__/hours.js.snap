@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change 1`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 1,
+    "prevDelta": -1,
+    "select": [Function],
+    "showChange": false,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2020 M04 23, Thu</th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"\\">00</span><span class=\\"\\">01</span><span class=\\"\\">02</span><span class=\\"\\">03</span><span class=\\"\\">04</span><span class=\\"disabled\\">05</span><span class=\\"disabled\\">06</span><span class=\\"disabled\\">07</span><span class=\\"disabled\\">08</span><span class=\\"disabled\\">09</span><span class=\\"disabled\\">10</span><span class=\\"disabled\\">11</span><span class=\\"disabled\\">12</span><span class=\\"active disabled\\">13</span><span class=\\"disabled\\">14</span><span class=\\"disabled\\">15</span><span class=\\"disabled\\">16</span><span class=\\"disabled\\">17</span><span class=\\"disabled\\">18</span><span class=\\"disabled\\">19</span><span class=\\"disabled\\">20</span><span class=\\"disabled\\">21</span><span class=\\"disabled\\">22</span><span class=\\"disabled\\">23</span></td>
+  </tr>
+</tbody>
+",
+}
+`;
+
+exports[`renders correctly 1`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 1,
+    "prevDelta": -1,
+    "select": [Function],
+    "showChange": false,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2020 M04 23, Thu</th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"\\">00</span><span class=\\"\\">01</span><span class=\\"\\">02</span><span class=\\"\\">03</span><span class=\\"\\">04</span><span class=\\"\\">05</span><span class=\\"\\">06</span><span class=\\"\\">07</span><span class=\\"\\">08</span><span class=\\"\\">09</span><span class=\\"\\">10</span><span class=\\"\\">11</span><span class=\\"\\">12</span><span class=\\"active\\">13</span><span class=\\"\\">14</span><span class=\\"\\">15</span><span class=\\"\\">16</span><span class=\\"\\">17</span><span class=\\"\\">18</span><span class=\\"\\">19</span><span class=\\"\\">20</span><span class=\\"\\">21</span><span class=\\"\\">22</span><span class=\\"\\">23</span></td>
+  </tr>
+</tbody>
+",
+}
+`;

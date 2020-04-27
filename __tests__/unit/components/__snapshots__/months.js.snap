@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change 1`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 1,
+    "prevDelta": -1,
+    "select": [Function],
+    "showChange": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th><span>◂</span></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2020</th>
+    <th><span>▸</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"month\\">M01</span><span class=\\"month\\">M02</span><span class=\\"month\\">M03</span><span class=\\"month active\\">M04</span><span class=\\"month\\">M05</span><span class=\\"month\\">M06</span><span class=\\"month disabled\\">M07</span><span class=\\"month disabled\\">M08</span><span class=\\"month disabled\\">M09</span><span class=\\"month disabled\\">M10</span><span class=\\"month disabled\\">M11</span><span class=\\"month disabled\\">M12</span></td>
+  </tr>
+</tbody>
+",
+}
+`;
+
+exports[`change 2`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 1,
+    "prevDelta": -1,
+    "select": [Function],
+    "showChange": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th><span>◂</span></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2020</th>
+    <th><span>▸</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"month\\">M01</span><span class=\\"month\\">M02</span><span class=\\"month\\">M03</span><span class=\\"month active\\">M04</span><span class=\\"month\\">M05</span><span class=\\"month\\">M06</span><span class=\\"month disabled\\">M07</span><span class=\\"month disabled\\">M08</span><span class=\\"month disabled\\">M09</span><span class=\\"month disabled\\">M10</span><span class=\\"month disabled\\">M11</span><span class=\\"month disabled\\">M12</span></td>
+  </tr>
+</tbody>
+",
+}
+`;
+
+exports[`change 3`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 1,
+    "prevDelta": -1,
+    "select": [Function],
+    "showChange": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th><span>◂</span></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2020</th>
+    <th><span>▸</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"month\\">M01</span><span class=\\"month\\">M02</span><span class=\\"month\\">M03</span><span class=\\"month active\\">M04</span><span class=\\"month\\">M05</span><span class=\\"month\\">M06</span><span class=\\"month disabled\\">M07</span><span class=\\"month disabled\\">M08</span><span class=\\"month disabled\\">M09</span><span class=\\"month disabled\\">M10</span><span class=\\"month disabled\\">M11</span><span class=\\"month disabled\\">M12</span></td>
+  </tr>
+</tbody>
+",
+}
+`;
+
+exports[`renders correctly 1`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 1,
+    "prevDelta": -1,
+    "select": [Function],
+    "showChange": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th><span>◂</span></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2020</th>
+    <th><span>▸</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"month\\">M01</span><span class=\\"month\\">M02</span><span class=\\"month\\">M03</span><span class=\\"month active\\">M04</span><span class=\\"month\\">M05</span><span class=\\"month\\">M06</span><span class=\\"month\\">M07</span><span class=\\"month\\">M08</span><span class=\\"month\\">M09</span><span class=\\"month\\">M10</span><span class=\\"month\\">M11</span><span class=\\"month\\">M12</span></td>
+  </tr>
+</tbody>
+",
+}
+`;

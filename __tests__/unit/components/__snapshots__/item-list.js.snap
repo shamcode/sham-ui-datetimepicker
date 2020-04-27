@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 1,
+    "prevDelta": -1,
+    "select": [Function],
+    "showChange": true,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th><span>◂</span></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">null</th>
+    <th><span>▸</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"></td>
+  </tr>
+</tbody>
+",
+}
+`;

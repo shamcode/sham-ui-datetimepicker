@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change 1`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 1,
+    "prevDelta": -1,
+    "select": [Function],
+    "showChange": false,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2020 M04 23, Thu</th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"\\">0</span><span class=\\"\\">5</span><span class=\\"\\">10</span><span class=\\"\\">15</span><span class=\\"\\">20</span><span class=\\"\\">25</span><span class=\\"\\">30</span><span class=\\"disabled\\">35</span><span class=\\"disabled\\">40</span><span class=\\"disabled\\">45</span><span class=\\"disabled\\">50</span><span class=\\"disabled\\">55</span></td>
+  </tr>
+</tbody>
+",
+}
+`;
+
+exports[`renders correctly 1`] = `
+Object {
+  "Constructor": "ItemList",
+  "Options": Object {
+    "ID": "component",
+    "change": [Function],
+    "classForDate": [Function],
+    "clickOnHeader": [Function],
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "header": [Function],
+    "isDateSelectable": [Function],
+    "items": [Function],
+    "nextDelta": 1,
+    "prevDelta": -1,
+    "select": [Function],
+    "showChange": false,
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th></th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2020 M04 23, Thu</th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan=\\"7\\"><span class=\\"\\">0</span><span class=\\"\\">5</span><span class=\\"\\">10</span><span class=\\"\\">15</span><span class=\\"\\">20</span><span class=\\"\\">25</span><span class=\\"\\">30</span><span class=\\"\\">35</span><span class=\\"\\">40</span><span class=\\"\\">45</span><span class=\\"\\">50</span><span class=\\"\\">55</span></td>
+  </tr>
+</tbody>
+",
+}
+`;

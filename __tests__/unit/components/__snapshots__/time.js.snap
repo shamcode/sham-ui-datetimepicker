@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Object {
+  "Constructor": "Time",
+  "Options": Object {
+    "ID": "component",
+    "date": 2020-04-23T06:02:17.000Z,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<thead>
+  <tr>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">2020 M04 23, Thu</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class=\\"change\\"><span>+</span></td>
+    <td></td>
+    <td class=\\"change\\"><span>+</span></td>
+    <td></td>
+    <td class=\\"change\\"><span>+</span></td>
+  </tr>
+  <tr>
+    <td class=\\"hour\\">13</td>
+    <td>:</td>
+    <td class=\\"minute\\">2</td>
+    <td>:</td>
+    <td class=\\"second\\">17</td>
+  </tr>
+  <tr>
+    <td class=\\"change\\"><span>–</span></td>
+    <td></td>
+    <td class=\\"change\\"><span>–</span></td>
+    <td></td>
+    <td class=\\"change\\"><span>–</span></td>
+  </tr>
+</tbody>
+",
+}
+`;

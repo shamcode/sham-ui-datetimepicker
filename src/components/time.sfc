@@ -1,0 +1,73 @@
+<template>
+    <thead>
+        <tr>
+            <th colspan="5" class="picker-switch" :onclick={{changeMode.bind( this, 'dom' )}}>
+                {{this.formatDate( value, 1 + 2 + 4 + 8 )}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="change" :onclick={{this.change.bind( this, 'Hours', 1)}}>
+                <span>+</span>
+            </td>
+            <td></td>
+            <td class="change" :onclick={{this.change.bind( this, 'Minutes', 1)}}>
+                <span>+</span>
+            </td>
+            <td></td>
+            <td class="change" :onclick={{this.change.bind( this, 'Seconds', 1)}}>
+                <span>+</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="hour" :onclick={{changeMode.bind( this, 'hours' )}}>
+                {{this.formatDate( date, 16 )}}
+            </td>
+            <td>:</td>
+            <td class="minute" :onclick={{changeMode.bind( this, 'minutes' )}}>
+                {{this.formatDate( date, 32 )}}
+            </td>
+            <td>:</td>
+            <td class="second" :onclick={{changeMode.bind( this, 'seconds' )}}>
+                {{this.formatDate( date, 64 )}}
+            </td>
+        </tr>
+        <tr>
+            <td class="change" :onclick={{this.change.bind( this, 'Hours', -1)}}>
+                <span>&ndash;</span>
+            </td>
+            <td></td>
+            <td class="change":onclick={{this.change.bind( this, 'Minutes', -1)}}>
+                <span>&ndash;</span>
+            </td>
+            <td></td>
+            <td class="change" :onclick={{this.change.bind( this, 'Seconds', -1)}}>
+                <span>&ndash;</span>
+            </td>
+        </tr>
+    </tbody>
+</template>
+
+<script>
+    import { mergeWithTemplate, options } from 'sham-ui-macro/babel.macro';
+    import { formatDate, change } from '../utils/date';
+
+    @mergeWithTemplate
+    class Time extends Template {
+        @options value = new Date();
+        @options date = new Date();
+
+        formatDate( date, mode ) {
+            return formatDate( date, mode );
+        }
+
+        change( type, delta ) {
+            this.options.changeValue(
+                change( this.options.date, type, delta )
+            );
+        }
+    }
+
+    export default Time;
+</script>

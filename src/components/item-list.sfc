@@ -1,0 +1,59 @@
+<template>
+    <thead>
+        <tr>
+            <th :onclick={{change.bind( this, prevDelta)}}>
+                {% if showChange %}
+                    <span>◂</span>
+                {% endif %}
+            </th>
+            <th colspan="5" class="picker-switch" :onclick={{clickOnHeader}}>
+                {{header( date )}}
+            </th>
+            <th :onclick={{change.bind( this, nextDelta)}}>
+                {% if showChange %}
+                    <span>▸</span>
+                {% endif %}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="7">
+                {% for item of items( value, date, classForDate, isDateSelectable ) %}
+                    <span
+                        :onclick={{select.bind( this, item.date )}}
+                        class={{item.class}}
+                    >
+                        {{item.label}}
+                    </span>
+                {% endfor %}
+            </td>
+        </tr>
+    </tbody>
+</template>
+
+
+<script>
+    import { mergeWithTemplate, options } from 'sham-ui-macro/babel.macro';
+
+    @mergeWithTemplate
+    class ItemList extends Template {
+        @options value = new Date();
+        @options date = new Date();
+        @options classForDate = () => '';
+        @options isDateSelectable = () => true;
+
+        @options showChange = true;
+        @options prevDelta = -1;
+        @options nextDelta = 1;
+        @options header = () => {};
+        @options items = () => [];
+
+
+        @options clickOnHeader = () => {};
+        @options change = () => {};
+        @options select() {}
+    }
+
+    export default ItemList;
+</script>

@@ -5,17 +5,43 @@
         <pre>
             DateTimePicker for sham-ui
         </pre>
-        <DateTimePicker/>
+        <DateTimePicker
+            value={{date}}
+            onChange={{::this.dateChanged}}
+        />
+
+        <p>
+            <h3>Selected: {{this.formatString( date )}}</h3>
+        </p>
     </main>
 
 </template>
 
 <script>
-    import { mergeWithTemplate } from 'sham-ui-macro/babel.macro';
+    import { mergeWithTemplate, options } from 'sham-ui-macro/babel.macro';
 
     @mergeWithTemplate
     class App extends Template {
+        @options date = new Date();
 
+        dateChanged( date ) {
+            this.update( {
+                date
+            } );
+        }
+
+        formatString( date ) {
+            return date.toLocaleString( 'default', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                'hour12': false,
+                'hour': '2-digit',
+                'minute': '2-digit',
+                'second': '2-digit'
+            } );
+        }
     }
 
     export default App;

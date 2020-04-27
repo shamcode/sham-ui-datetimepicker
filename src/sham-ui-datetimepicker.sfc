@@ -1,19 +1,77 @@
 <template>
+    {% import DynamicComponent from 'sham-ui-dynamic-component' %}
 
+    <table class="sham-ui-datetimepicker">
+        <DynamicComponent
+            component={{componentsByMode[ displayMode ][ 0 ]}}
+            date={{date}}
+            value={{value}}
+            today={{today}}
+            showTime={{showTime}}
+            isDateSelectable={{isDateSelectable}}
+            classForDate={{classForDate}}
+            changeDate={{::this.changeDate}}
+            changeValue={{::this.changeValue}}
+            changeMode={{::this.changeMode}}
+            {{...componentsByMode[ displayMode ][ 1 ]( this )}}
+        />
+    </table>
 </template>
 
 <script>
     import { mergeWithTemplate, options } from 'sham-ui-macro/babel.macro';
+    import { yearsRangeOptions } from './options/year-range';
+    import { yearOptions } from './options/year';
+    import { monthOptions } from './options/months';
+    import { hoursOptions } from './options/hours';
+    import { minutesOptions } from './options/minutes';
+    import { secondsOptions } from './options/seconds';
+    import ItemsList from './components/item-list.sfc';
+    import Time from './components/time.sfc';
+    import DayOfMonth from './components/day-of-month.sfc';
 
     @mergeWithTemplate
     class DateTimePicker extends Template {
         @options value = new Date();
         @options onChange = () => {};
         @options showTime = true;
-        @options disabled = false;
         @options isDateSelectable = () => true;
+        @options classForDate = () => '';
 
-        @options currentMode = 'month'
+        @options get date() {
+            return new Date( this.options.value.getTime() );
+        }
+
+        @options today = new Date();
+
+        @options displayMode = 'dom';
+        @options componentsByMode = {
+            time: [ Time, () => null ],
+            dom: [ DayOfMonth, () => null ],
+            months: [ ItemsList, monthOptions ],
+            year: [ ItemsList, yearOptions ],
+            yearRange: [ ItemsList, yearsRangeOptions ],
+            hours: [ ItemsList, hoursOptions ],
+            minutes: [ ItemsList, minutesOptions ],
+            seconds: [ ItemsList, secondsOptions ]
+        };
+
+        changeDate( date ) {
+            this.update( { date } );
+        }
+
+        changeValue( date ) {
+            if ( this.options.isDateSelectable( date ) ) {
+                this.update( {
+                    date: new Date( date.getTime() )
+                } );
+                this.options.onChange( date );
+            }
+        }
+
+        changeMode( displayMode ) {
+            this.update( { displayMode } );
+        }
     }
 
     export default DateTimePicker;
