@@ -6,9 +6,11 @@ Object {
   "Options": Object {
     "ID": "component",
     "date": 2020-04-23T06:02:17.000Z,
+    "decSymbol": "–",
     "directives": Object {
       "onclick": [Function],
     },
+    "incSymbol": "+",
     "today": 2020-04-25T08:03:30.000Z,
     "value": 2020-04-23T06:02:17.000Z,
   },

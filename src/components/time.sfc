@@ -9,15 +9,15 @@
     <tbody>
         <tr>
             <td class="change" :onclick={{this.change.bind( this, 'Hours', 1)}}>
-                <span>+</span>
+                <span>{{incSymbol}}</span>
             </td>
             <td></td>
             <td class="change" :onclick={{this.change.bind( this, 'Minutes', 1)}}>
-                <span>+</span>
+                <span>{{incSymbol}}</span>
             </td>
             <td></td>
             <td class="change" :onclick={{this.change.bind( this, 'Seconds', 1)}}>
-                <span>+</span>
+                <span>{{incSymbol}}</span>
             </td>
         </tr>
         <tr>
@@ -35,15 +35,15 @@
         </tr>
         <tr>
             <td class="change" :onclick={{this.change.bind( this, 'Hours', -1)}}>
-                <span>&ndash;</span>
+                <span>{{decSymbol}}</span>
             </td>
             <td></td>
             <td class="change":onclick={{this.change.bind( this, 'Minutes', -1)}}>
-                <span>&ndash;</span>
+                <span>{{decSymbol}}</span>
             </td>
             <td></td>
             <td class="change" :onclick={{this.change.bind( this, 'Seconds', -1)}}>
-                <span>&ndash;</span>
+                <span>{{decSymbol}}</span>
             </td>
         </tr>
     </tbody>
@@ -57,6 +57,9 @@
     class Time extends Template {
         @options value = new Date();
         @options date = new Date();
+
+        @options incSymbol = '+';
+        @options decSymbol = String.fromCharCode( 0x2013 );
 
         formatDate( date, mode ) {
             return formatDate( date, mode );

@@ -2,13 +2,13 @@
     <thead>
         <tr>
             <th :onclick={{this.changeMonth.bind( this, -1)}}>
-                <span>◂</span>
+                <span>{{prevSymbol}}</span>
             </th>
             <th colspan="5" class="picker-switch" :onclick={{changeMode.bind( this, 'months')}}>
                 {{this.currentMonth( date )}}
             </th>
             <th :onclick={{this.changeMonth.bind( this, 1)}}>
-                <span>▸</span>
+                <span>{{nextSymbol}}</span>
             </th>
         </tr>
         <tr>
@@ -18,7 +18,7 @@
         </tr>
     </thead>
     <tbody>
-        {% for week of this.getMonthsDays( value, date, classForDate, isDateSelectable ) %}
+        {% for week of this.getMonthsDays( value, date, today, classForDate, isDateSelectable ) %}
             <tr>
                 {% for day of week %}
                     <td
@@ -75,6 +75,9 @@
             this.update( { date } );
         }
 
+        @options prevSymbol = String.fromCharCode( 0x25C2 );
+        @options nextSymbol = String.fromCharCode( 0x25B8 );
+
         @options daysOfWeek = daysOfWeek(); // Calc once
 
         formatDate( date, mode ) {
@@ -87,7 +90,7 @@
             );
         }
 
-        getMonthsDays( current, date, classForDate, isDateSelectable ) {
+        getMonthsDays( current, date, today, classForDate, isDateSelectable ) {
             const monthsDays = new Array( 6 );
             const firstDayOfMonth = new Date( date.getFullYear(), date.getMonth(), 1 );
             let firstWeekday = firstDayOfMonth.getDay() - 1;
@@ -105,7 +108,7 @@
                             'day',
                             classForDate( dom ),
                             dom.getMonth() === date.getMonth() ? '' : 'other-month',
-                            compare( dom, this.options.today, 1 + 2 + 4 ) ? 'today' : '', // cmp by year, month & date
+                            compare( dom, today, 1 + 2 + 4 ) ? 'today' : '', // cmp by year, month & date
                             compare( dom, current, 1 + 2 + 4 ) ? 'active' : '', // cmp by year, month & date
                             isDateSelectable( dom ) ? '' : 'disabled'
                         ] )

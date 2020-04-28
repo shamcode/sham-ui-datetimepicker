@@ -3,7 +3,7 @@
         <tr>
             <th :onclick={{change.bind( this, prevDelta)}}>
                 {% if showChange %}
-                    <span>◂</span>
+                    <span>{{prevSymbol}}</span>
                 {% endif %}
             </th>
             <th colspan="5" class="picker-switch" :onclick={{clickOnHeader}}>
@@ -11,7 +11,7 @@
             </th>
             <th :onclick={{change.bind( this, nextDelta)}}>
                 {% if showChange %}
-                    <span>▸</span>
+                    <span>{{nextSymbol}}</span>
                 {% endif %}
             </th>
         </tr>
@@ -42,6 +42,9 @@
         @options date = new Date();
         @options classForDate = () => '';
         @options isDateSelectable = () => true;
+
+        @options prevSymbol = String.fromCharCode( 0x25C2 );
+        @options nextSymbol = String.fromCharCode( 0x25B8 );
 
         @options showChange = true;
         @options prevDelta = -1;

@@ -4,6 +4,10 @@
     <table class="sham-ui-datetimepicker">
         <DynamicComponent
             component={{componentsByMode[ displayMode ][ 0 ]}}
+            prevSymbol={{prevSymbol}}
+            nextSymbol={{nextSymbol}}
+            incSymbol={{incSymbol}}
+            decSymbol={{decSymbol}}
             date={{date}}
             value={{value}}
             today={{today}}
@@ -37,6 +41,11 @@
         @options showTime = true;
         @options isDateSelectable = () => true;
         @options classForDate = () => '';
+
+        @options prevSymbol = String.fromCharCode( 0x25C2 );
+        @options nextSymbol = String.fromCharCode( 0x25B8 );
+        @options incSymbol = '+';
+        @options decSymbol = String.fromCharCode( 0x2013 );
 
         @options get date() {
             return new Date( this.options.value.getTime() );
