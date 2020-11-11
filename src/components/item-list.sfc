@@ -1,7 +1,7 @@
 <template>
     <thead>
         <tr>
-            <th :onclick={{change.bind( this, prevDelta)}}>
+            <th :onclick={{change.bind( this, prevDelta )}}>
                 {% if showChange %}
                     <span>{{prevSymbol}}</span>
                 {% endif %}
@@ -9,7 +9,7 @@
             <th colspan="5" class="picker-switch" :onclick={{clickOnHeader}}>
                 {{header( date )}}
             </th>
-            <th :onclick={{change.bind( this, nextDelta)}}>
+            <th :onclick={{change.bind( this, nextDelta )}}>
                 {% if showChange %}
                     <span>{{nextSymbol}}</span>
                 {% endif %}
