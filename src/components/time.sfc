@@ -8,15 +8,15 @@
     </thead>
     <tbody>
         <tr>
-            <td class="change" :onclick={{this.change.bind( this, 'Hours', 1)}}>
+            <td class="change" :onclick={{this.change.bind( this, 'Hours', 1 )}}>
                 <span>{{incSymbol}}</span>
             </td>
             <td></td>
-            <td class="change" :onclick={{this.change.bind( this, 'Minutes', 1)}}>
+            <td class="change" :onclick={{this.change.bind( this, 'Minutes', 1 )}}>
                 <span>{{incSymbol}}</span>
             </td>
             <td></td>
-            <td class="change" :onclick={{this.change.bind( this, 'Seconds', 1)}}>
+            <td class="change" :onclick={{this.change.bind( this, 'Seconds', 1 )}}>
                 <span>{{incSymbol}}</span>
             </td>
         </tr>
@@ -34,15 +34,15 @@
             </td>
         </tr>
         <tr>
-            <td class="change" :onclick={{this.change.bind( this, 'Hours', -1)}}>
+            <td class="change" :onclick={{this.change.bind( this, 'Hours', -1 )}}>
                 <span>{{decSymbol}}</span>
             </td>
             <td></td>
-            <td class="change":onclick={{this.change.bind( this, 'Minutes', -1)}}>
+            <td class="change":onclick={{this.change.bind( this, 'Minutes', -1 )}}>
                 <span>{{decSymbol}}</span>
             </td>
             <td></td>
-            <td class="change" :onclick={{this.change.bind( this, 'Seconds', -1)}}>
+            <td class="change" :onclick={{this.change.bind( this, 'Seconds', -1 )}}>
                 <span>{{decSymbol}}</span>
             </td>
         </tr>
