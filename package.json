@@ -3,7 +3,7 @@
   "description": "DateTimePicker for sham-ui",
   "author": "Eugeny Burnashov <shamcode@gmail.com>",
   "main": "index.js",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "scripts": {
     "start": "node demo-app/server.js",
     "test:coverage": "jest --coverage",
@@ -45,11 +45,11 @@
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "sass-loader": "~7.1.0",
-    "sham-ui-jest-preprocessor": "^4.0.3",
-    "sham-ui-macro": "^1.0.0",
-    "sham-ui-templates": "^4.1.0",
-    "sham-ui-templates-loader": "^4.0.3",
-    "sham-ui-test-helpers": "^4.0.3",
+    "sham-ui-jest-preprocessor": "^4.1.1",
+    "sham-ui-macro": "^1.1.0",
+    "sham-ui-templates": "^4.2.1",
+    "sham-ui-templates-loader": "^4.1.1",
+    "sham-ui-test-helpers": "^4.1.1",
     "style-loader": "~0.22.1",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended-scss": "^3.3.0",
@@ -60,9 +60,9 @@
     "webpack-hot-middleware": "^2.22.3"
   },
   "dependencies": {
-    "sham-ui": "^4.0.1",
-    "sham-ui-directives": "^4.0.3",
-    "sham-ui-dynamic-component": "^1.0.3"
+    "sham-ui": "^4.1.0",
+    "sham-ui-directives": "^4.1.1",
+    "sham-ui-dynamic-component": "^1.1.1"
   },
   "babel": {
     "presets": [
