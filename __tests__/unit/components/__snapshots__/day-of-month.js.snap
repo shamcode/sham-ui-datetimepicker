@@ -9,13 +9,13 @@ Object {
     "classForDate": [Function],
     "date": 2015-03-23T07:02:17.000Z,
     "daysOfWeek": Array [
-      "Mon",
-      "Tue",
-      "Wed",
-      "Thu",
-      "Fri",
-      "Sat",
-      "Sun",
+      "Пн",
+      "Вт",
+      "Ср",
+      "Чт",
+      "Пт",
+      "Сб",
+      "Вс",
     ],
     "directives": Object {
       "onclick": [Function],
@@ -31,17 +31,17 @@ Object {
 <thead>
   <tr>
     <th><span>◂</span></th>
-    <th colspan=\\"5\\" class=\\"picker-switch\\">2015 ├F3: M03┤</th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">Март 2015 г.</th>
     <th><span>▸</span></th>
   </tr>
   <tr>
-    <th>Mon</th>
-    <th>Tue</th>
-    <th>Wed</th>
-    <th>Thu</th>
-    <th>Fri</th>
-    <th>Sat</th>
-    <th>Sun</th>
+    <th>Пн</th>
+    <th>Вт</th>
+    <th>Ср</th>
+    <th>Чт</th>
+    <th>Пт</th>
+    <th>Сб</th>
+    <th>Вс</th>
   </tr>
 </thead>
 <tbody>
@@ -119,13 +119,13 @@ Object {
     "classForDate": [Function],
     "date": 2015-02-23T07:02:17.000Z,
     "daysOfWeek": Array [
-      "Mon",
-      "Tue",
-      "Wed",
-      "Thu",
-      "Fri",
-      "Sat",
-      "Sun",
+      "Пн",
+      "Вт",
+      "Ср",
+      "Чт",
+      "Пт",
+      "Сб",
+      "Вс",
     ],
     "directives": Object {
       "onclick": [Function],
@@ -141,17 +141,17 @@ Object {
 <thead>
   <tr>
     <th><span>◂</span></th>
-    <th colspan=\\"5\\" class=\\"picker-switch\\">2015 ├F3: M02┤</th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">Февраль 2015 г.</th>
     <th><span>▸</span></th>
   </tr>
   <tr>
-    <th>Mon</th>
-    <th>Tue</th>
-    <th>Wed</th>
-    <th>Thu</th>
-    <th>Fri</th>
-    <th>Sat</th>
-    <th>Sun</th>
+    <th>Пн</th>
+    <th>Вт</th>
+    <th>Ср</th>
+    <th>Чт</th>
+    <th>Пт</th>
+    <th>Сб</th>
+    <th>Вс</th>
   </tr>
 </thead>
 <tbody>
@@ -229,13 +229,13 @@ Object {
     "classForDate": [Function],
     "date": 2015-02-23T07:02:17.000Z,
     "daysOfWeek": Array [
-      "Mon",
-      "Tue",
-      "Wed",
-      "Thu",
-      "Fri",
-      "Sat",
-      "Sun",
+      "Пн",
+      "Вт",
+      "Ср",
+      "Чт",
+      "Пт",
+      "Сб",
+      "Вс",
     ],
     "directives": Object {
       "onclick": [Function],
@@ -251,17 +251,17 @@ Object {
 <thead>
   <tr>
     <th><span>◂</span></th>
-    <th colspan=\\"5\\" class=\\"picker-switch\\">2015 ├F3: M02┤</th>
+    <th colspan=\\"5\\" class=\\"picker-switch\\">Февраль 2015 г.</th>
     <th><span>▸</span></th>
   </tr>
   <tr>
-    <th>Mon</th>
-    <th>Tue</th>
-    <th>Wed</th>
-    <th>Thu</th>
-    <th>Fri</th>
-    <th>Sat</th>
-    <th>Sun</th>
+    <th>Пн</th>
+    <th>Вт</th>
+    <th>Ср</th>
+    <th>Чт</th>
+    <th>Пт</th>
+    <th>Сб</th>
+    <th>Вс</th>
   </tr>
 </thead>
 <tbody>

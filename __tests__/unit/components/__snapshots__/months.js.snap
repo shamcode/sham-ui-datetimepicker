@@ -34,7 +34,7 @@ Object {
 </thead>
 <tbody>
   <tr>
-    <td colspan=\\"7\\"><span class=\\"month\\">M01</span><span class=\\"month\\">M02</span><span class=\\"month\\">M03</span><span class=\\"month active\\">M04</span><span class=\\"month\\">M05</span><span class=\\"month\\">M06</span><span class=\\"month disabled\\">M07</span><span class=\\"month disabled\\">M08</span><span class=\\"month disabled\\">M09</span><span class=\\"month disabled\\">M10</span><span class=\\"month disabled\\">M11</span><span class=\\"month disabled\\">M12</span></td>
+    <td colspan=\\"7\\"><span class=\\"month\\">Янв.</span><span class=\\"month\\">Февр.</span><span class=\\"month\\">Март</span><span class=\\"month active\\">Апр.</span><span class=\\"month\\">Май</span><span class=\\"month\\">Июнь</span><span class=\\"month disabled\\">Июль</span><span class=\\"month disabled\\">Авг.</span><span class=\\"month disabled\\">Сент.</span><span class=\\"month disabled\\">Окт.</span><span class=\\"month disabled\\">Нояб.</span><span class=\\"month disabled\\">Дек.</span></td>
   </tr>
 </tbody>
 ",
@@ -75,7 +75,7 @@ Object {
 </thead>
 <tbody>
   <tr>
-    <td colspan=\\"7\\"><span class=\\"month\\">M01</span><span class=\\"month\\">M02</span><span class=\\"month\\">M03</span><span class=\\"month active\\">M04</span><span class=\\"month\\">M05</span><span class=\\"month\\">M06</span><span class=\\"month disabled\\">M07</span><span class=\\"month disabled\\">M08</span><span class=\\"month disabled\\">M09</span><span class=\\"month disabled\\">M10</span><span class=\\"month disabled\\">M11</span><span class=\\"month disabled\\">M12</span></td>
+    <td colspan=\\"7\\"><span class=\\"month\\">Янв.</span><span class=\\"month\\">Февр.</span><span class=\\"month\\">Март</span><span class=\\"month active\\">Апр.</span><span class=\\"month\\">Май</span><span class=\\"month\\">Июнь</span><span class=\\"month disabled\\">Июль</span><span class=\\"month disabled\\">Авг.</span><span class=\\"month disabled\\">Сент.</span><span class=\\"month disabled\\">Окт.</span><span class=\\"month disabled\\">Нояб.</span><span class=\\"month disabled\\">Дек.</span></td>
   </tr>
 </tbody>
 ",
@@ -116,7 +116,7 @@ Object {
 </thead>
 <tbody>
   <tr>
-    <td colspan=\\"7\\"><span class=\\"month\\">M01</span><span class=\\"month\\">M02</span><span class=\\"month\\">M03</span><span class=\\"month active\\">M04</span><span class=\\"month\\">M05</span><span class=\\"month\\">M06</span><span class=\\"month disabled\\">M07</span><span class=\\"month disabled\\">M08</span><span class=\\"month disabled\\">M09</span><span class=\\"month disabled\\">M10</span><span class=\\"month disabled\\">M11</span><span class=\\"month disabled\\">M12</span></td>
+    <td colspan=\\"7\\"><span class=\\"month\\">Янв.</span><span class=\\"month\\">Февр.</span><span class=\\"month\\">Март</span><span class=\\"month active\\">Апр.</span><span class=\\"month\\">Май</span><span class=\\"month\\">Июнь</span><span class=\\"month disabled\\">Июль</span><span class=\\"month disabled\\">Авг.</span><span class=\\"month disabled\\">Сент.</span><span class=\\"month disabled\\">Окт.</span><span class=\\"month disabled\\">Нояб.</span><span class=\\"month disabled\\">Дек.</span></td>
   </tr>
 </tbody>
 ",
@@ -157,7 +157,7 @@ Object {
 </thead>
 <tbody>
   <tr>
-    <td colspan=\\"7\\"><span class=\\"month\\">M01</span><span class=\\"month\\">M02</span><span class=\\"month\\">M03</span><span class=\\"month active\\">M04</span><span class=\\"month\\">M05</span><span class=\\"month\\">M06</span><span class=\\"month\\">M07</span><span class=\\"month\\">M08</span><span class=\\"month\\">M09</span><span class=\\"month\\">M10</span><span class=\\"month\\">M11</span><span class=\\"month\\">M12</span></td>
+    <td colspan=\\"7\\"><span class=\\"month\\">Янв.</span><span class=\\"month\\">Февр.</span><span class=\\"month\\">Март</span><span class=\\"month active\\">Апр.</span><span class=\\"month\\">Май</span><span class=\\"month\\">Июнь</span><span class=\\"month\\">Июль</span><span class=\\"month\\">Авг.</span><span class=\\"month\\">Сент.</span><span class=\\"month\\">Окт.</span><span class=\\"month\\">Нояб.</span><span class=\\"month\\">Дек.</span></td>
   </tr>
 </tbody>
 ",
