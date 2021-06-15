@@ -2,7 +2,6 @@
 
 exports[`renders correctly 1`] = `
 Object {
-  "Constructor": "ItemList",
   "Options": Object {
     "ID": "component",
     "change": [Function],

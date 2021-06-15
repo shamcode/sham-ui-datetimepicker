@@ -1,24 +1,24 @@
 <template>
     <thead>
         <tr>
-            <th :onclick={{this.changeMonth.bind( this, -1 )}}>
+            <th :onclick={{this[ ref( 'changeMonth' ) ].bind( this, -1 )}}>
                 <span>{{prevSymbol}}</span>
             </th>
             <th colspan="5" class="picker-switch" :onclick={{changeMode.bind( this, 'months' )}}>
-                {{this.currentMonth( date )}}
+                {{ date | formatDate( 1 + 2 ) | title }}
             </th>
-            <th :onclick={{this.changeMonth.bind( this, 1 )}}>
+            <th :onclick={{this[ ref( 'changeMonth' ) ].bind( this, 1 )}}>
                 <span>{{nextSymbol}}</span>
             </th>
         </tr>
         <tr>
-            {% for weekDay of daysOfWeek %}
+            {% for weekDay of weekDays %}
                 <th>{{weekDay}}</th>
             {% endfor %}
         </tr>
     </thead>
     <tbody>
-        {% for week of this.getMonthsDays( value, date, today, classForDate, isDateSelectable ) %}
+        {% for week of this[ ref( 'getMonthsDays' ) ]( value, date, today, classForDate, isDateSelectable ) %}
             <tr>
                 {% for day of week %}
                     <td
@@ -35,7 +35,7 @@
         <tfoot>
             <tr>
                 <th colspan="7" :onclick={{changeMode.bind( this, 'time' )}}>
-                    {{this.formatDate( value, 16 + 32 + 64 )}}
+                    {{ value | formatDate( 16 + 32 + 64 )}}
                 </th>
             </tr>
         </tfoot>
@@ -43,7 +43,6 @@
 </template>
 
 <script>
-    import { mergeWithTemplate, options } from 'sham-ui-macro/babel.macro';
     import { title, classes } from '../utils/string';
     import { change, clone, compare, formatDate } from '../utils/date';
 
@@ -63,34 +62,31 @@
         return daysOfWeek;
     };
 
-    @mergeWithTemplate
-    class DayOfMonth extends Template {
-        @options value = new Date();
-        @options date = new Date();
-        @options today = new Date();
-        @options showTime = true;
-        @options isDateSelectable = () => true;
-        @options classForDate = () => '';
-        @options changeDate( date ) {
-            this.update( { date } );
-        }
+    function DayOfMonth( options, update ) {
+        const date = ref();
+        const changeDate = ref();
 
-        @options prevSymbol = String.fromCharCode( 0x25C2 );
-        @options nextSymbol = String.fromCharCode( 0x25B8 );
+        const state = options( {
+            [ ref( 'value' ) ]: new Date(),
+            [ date ]: new Date(),
+            [ ref( 'today' ) ]: new Date(),
+            [ ref( 'showTime' ) ]: true,
+            [ ref( 'isDateSelectable' ) ]: () => true,
+            [ ref( 'classForDate' ) ]: () => '',
+            [ changeDate ]: ( value ) => update( {
+                [ date ]: value
+            } ),
+            [ ref( 'prevSymbol' ) ]: String.fromCharCode( 0x25C2 ),
+            [ ref( 'nextSymbol' ) ]: String.fromCharCode( 0x25B8 ),
+            [ ref( 'weekDays' ) ]: daysOfWeek(),
+            [ ref( 'changeValue' ) ]: () => {},
+            [ ref( 'changeMode' ) ]: () => {}
+        } );
 
-        @options daysOfWeek = daysOfWeek(); // Calc once
+        this.filters.formatDate = formatDate;
+        this.filters.title = title;
 
-        formatDate( date, mode ) {
-            return formatDate( date, mode );
-        }
-
-        currentMonth( date ) {
-            return title(
-                this.formatDate( date, 1 + 2 )
-            );
-        }
-
-        getMonthsDays( current, date, today, classForDate, isDateSelectable ) {
+        this[ ref( 'getMonthsDays' ) ] = ( current, date, today, classForDate, isDateSelectable ) => {
             const monthsDays = new Array( 6 );
             const firstDayOfMonth = new Date( date.getFullYear(), date.getMonth(), 1 );
             let firstWeekday = firstDayOfMonth.getDay() - 1;
@@ -118,14 +114,11 @@
                 monthsDays[ i ] = week;
             }
             return monthsDays;
-        }
+        };
 
-        changeMonth( delta ) {
-            this.options.changeDate(
-                change( this.options.date, 'Month', delta )
-            );
-        }
+        this[ ref( 'changeMonth' ) ] = delta => state[ changeDate ](
+            change( state[ date ], 'Month', delta )
+        );
     }
-
-    export default DayOfMonth;
+    export default Component( Template, DayOfMonth );
 </script>

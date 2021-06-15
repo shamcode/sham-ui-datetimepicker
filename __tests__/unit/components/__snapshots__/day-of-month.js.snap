@@ -2,21 +2,13 @@
 
 exports[`changeMonth 1`] = `
 Object {
-  "Constructor": "DayOfMonth",
   "Options": Object {
     "ID": "component",
     "changeDate": [Function],
+    "changeMode": [Function],
+    "changeValue": [Function],
     "classForDate": [Function],
     "date": 2015-03-23T07:02:17.000Z,
-    "daysOfWeek": Array [
-      "Пн",
-      "Вт",
-      "Ср",
-      "Чт",
-      "Пт",
-      "Сб",
-      "Вс",
-    ],
     "directives": Object {
       "onclick": [Function],
     },
@@ -26,6 +18,15 @@ Object {
     "showTime": true,
     "today": 2020-04-25T08:03:30.000Z,
     "value": 2015-02-23T07:02:17.000Z,
+    "weekDays": Array [
+      "Пн",
+      "Вт",
+      "Ср",
+      "Чт",
+      "Пт",
+      "Сб",
+      "Вс",
+    ],
   },
   "html": "
 <thead>
@@ -105,28 +106,20 @@ Object {
     <th colspan=\\"7\\">13:02:17</th>
   </tr>
 </tfoot>
-<!--if-->
+<!--0-->
 ",
 }
 `;
 
 exports[`changeMonth 2`] = `
 Object {
-  "Constructor": "DayOfMonth",
   "Options": Object {
     "ID": "component",
     "changeDate": [Function],
+    "changeMode": [Function],
+    "changeValue": [Function],
     "classForDate": [Function],
     "date": 2015-02-23T07:02:17.000Z,
-    "daysOfWeek": Array [
-      "Пн",
-      "Вт",
-      "Ср",
-      "Чт",
-      "Пт",
-      "Сб",
-      "Вс",
-    ],
     "directives": Object {
       "onclick": [Function],
     },
@@ -136,6 +129,15 @@ Object {
     "showTime": true,
     "today": 2020-04-25T08:03:30.000Z,
     "value": 2015-02-23T07:02:17.000Z,
+    "weekDays": Array [
+      "Пн",
+      "Вт",
+      "Ср",
+      "Чт",
+      "Пт",
+      "Сб",
+      "Вс",
+    ],
   },
   "html": "
 <thead>
@@ -215,28 +217,20 @@ Object {
     <th colspan=\\"7\\">13:02:17</th>
   </tr>
 </tfoot>
-<!--if-->
+<!--0-->
 ",
 }
 `;
 
 exports[`renders correctly 1`] = `
 Object {
-  "Constructor": "DayOfMonth",
   "Options": Object {
     "ID": "component",
     "changeDate": [Function],
+    "changeMode": [Function],
+    "changeValue": [Function],
     "classForDate": [Function],
     "date": 2015-02-23T07:02:17.000Z,
-    "daysOfWeek": Array [
-      "Пн",
-      "Вт",
-      "Ср",
-      "Чт",
-      "Пт",
-      "Сб",
-      "Вс",
-    ],
     "directives": Object {
       "onclick": [Function],
     },
@@ -246,6 +240,15 @@ Object {
     "showTime": true,
     "today": 2020-04-25T08:03:30.000Z,
     "value": 2015-02-23T07:02:17.000Z,
+    "weekDays": Array [
+      "Пн",
+      "Вт",
+      "Ср",
+      "Чт",
+      "Пт",
+      "Сб",
+      "Вс",
+    ],
   },
   "html": "
 <thead>
@@ -325,7 +328,7 @@ Object {
     <th colspan=\\"7\\">13:02:17</th>
   </tr>
 </tfoot>
-<!--if-->
+<!--0-->
 ",
 }
 `;

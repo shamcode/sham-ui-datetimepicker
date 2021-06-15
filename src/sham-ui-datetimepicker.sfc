@@ -2,8 +2,10 @@
     {% import DynamicComponent from 'sham-ui-dynamic-component' %}
 
     <table class="sham-ui-datetimepicker">
+        {% let componentForMode = componentsByMode[ displayMode ] %}
+
         <DynamicComponent
-            component={{componentsByMode[ displayMode ][ 0 ]}}
+            component={{componentForMode[ 0 ]}}
             prevSymbol={{prevSymbol}}
             nextSymbol={{nextSymbol}}
             incSymbol={{incSymbol}}
@@ -14,16 +16,15 @@
             showTime={{showTime}}
             isDateSelectable={{isDateSelectable}}
             classForDate={{classForDate}}
-            changeDate={{::this.changeDate}}
-            changeValue={{::this.changeValue}}
-            changeMode={{::this.changeMode}}
-            {{...componentsByMode[ displayMode ][ 1 ]( this )}}
+            changeDate={{this[ ref( 'changeDate' ) ]}}
+            changeValue={{this[ ref( 'changeValue' ) ]}}
+            changeMode={{this[ ref( 'changeMode' ) ]}}
+            {{...componentForMode[ 1 ]( this )}}
         />
     </table>
 </template>
 
 <script>
-    import { mergeWithTemplate, options } from 'sham-ui-macro/babel.macro';
     import { yearsRangeOptions } from './options/year-range';
     import { yearOptions } from './options/year';
     import { monthOptions } from './options/months';
@@ -34,54 +35,67 @@
     import Time from './components/time.sfc';
     import DayOfMonth from './components/day-of-month.sfc';
 
-    @mergeWithTemplate
-    class DateTimePicker extends Template {
-        @options value = new Date();
-        @options onChange = () => {};
-        @options showTime = true;
-        @options isDateSelectable = () => true;
-        @options classForDate = () => '';
+    function DateTimePicker( options, update ) {
+        const value = ref();
+        const onChange = ref();
+        const isDateSelectable = ref();
+        const classForDate = ref();
 
-        @options prevSymbol = String.fromCharCode( 0x25C2 );
-        @options nextSymbol = String.fromCharCode( 0x25B8 );
-        @options incSymbol = '+';
-        @options decSymbol = String.fromCharCode( 0x2013 );
+        const date = ref();
+        const displayMode = ref();
 
-        @options get date() {
-            return new Date( this.options.value.getTime() );
-        }
+        const state = options( {
 
-        @options today = new Date();
+            // Logic
+            [ value ]: new Date(),
+            [ onChange ]: () => {},
+            [ ref( 'showTime' ) ]: true,
+            [ isDateSelectable ]: () => true,
+            [ classForDate ]: () => '',
 
-        @options displayMode = 'dom';
-        @options componentsByMode = {
-            time: [ Time, () => null ],
-            dom: [ DayOfMonth, () => null ],
-            months: [ ItemsList, monthOptions ],
-            year: [ ItemsList, yearOptions ],
-            yearRange: [ ItemsList, yearsRangeOptions ],
-            hours: [ ItemsList, hoursOptions ],
-            minutes: [ ItemsList, minutesOptions ],
-            seconds: [ ItemsList, secondsOptions ]
+            // Style
+            [ ref( 'prevSymbol' ) ]: String.fromCharCode( 0x25C2 ),
+            [ ref( 'nextSymbol' ) ]: String.fromCharCode( 0x25B8 ),
+            [ ref( 'incSymbol' ) ]: '+',
+            [ ref( 'decSymbol' ) ]: String.fromCharCode( 0x2013 ),
+
+            // Inner
+            [ date ]: {
+                get() {
+                    return new Date( state[ value ].getTime() );
+                }
+            },
+            [ ref( 'today' ) ]: new Date(),
+            [ displayMode ]: 'dom',
+            [ ref( 'componentsByMode' ) ]: {
+                time: [ Time, () => null ],
+                dom: [ DayOfMonth, () => null ],
+                months: [ ItemsList, monthOptions ],
+                year: [ ItemsList, yearOptions ],
+                yearRange: [ ItemsList, yearsRangeOptions ],
+                hours: [ ItemsList, hoursOptions ],
+                minutes: [ ItemsList, minutesOptions ],
+                seconds: [ ItemsList, secondsOptions ]
+            }
+        } );
+
+        this[ ref( 'changeDate' ) ] = value => update( {
+            [ date ]: value
+        } );
+
+        this[ ref( 'changeValue' ) ] = value => {
+            if ( state[ isDateSelectable ]( value ) ) {
+                update( {
+                    [ date ]: new Date( value.getTime() )
+                } );
+                state[ onChange ]( value );
+            }
         };
 
-        changeDate( date ) {
-            this.update( { date } );
-        }
-
-        changeValue( date ) {
-            if ( this.options.isDateSelectable( date ) ) {
-                this.update( {
-                    date: new Date( date.getTime() )
-                } );
-                this.options.onChange( date );
-            }
-        }
-
-        changeMode( displayMode ) {
-            this.update( { displayMode } );
-        }
+        this[ ref( 'changeMode' ) ] = value => update( {
+            [ displayMode ]: value
+        } );
     }
 
-    export default DateTimePicker;
+    export default Component( Template, DateTimePicker );
 </script>

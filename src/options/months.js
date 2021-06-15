@@ -1,15 +1,16 @@
+import { ref } from 'sham-ui-macro/ref.macro';
 import { title, classes } from '../utils/string';
 import { clone, change, compare, formatDate } from '../utils/date';
 
 export function monthOptions( component ) {
     return {
-        showChange: true,
-        prevDelta: -1,
-        nextDelta: 1,
-        header( date ) {
+        [ ref( 'showChange' ) ]: true,
+        [ ref( 'prevDelta' ) ]: -1,
+        [ ref( 'nextDelta' ) ]: 1,
+        [ ref( 'header' ) ]( date ) {
             return formatDate( date, 1 );
         },
-        items( current, date, classForDate, isDateSelectable ) {
+        [ ref( 'items' ) ]( current, date, classForDate, isDateSelectable ) {
             const months = new Array( 12 );
             let d = new Date( date.getFullYear(), 0, 1 );
             for ( let i = 0; i < 12; i++ ) {
@@ -30,17 +31,17 @@ export function monthOptions( component ) {
             }
             return months;
         },
-        clickOnHeader() {
-            component.changeMode( 'year' );
+        [ ref( 'clickOnHeader' ) ]() {
+            component[ ref( 'changeMode' ) ]( 'year' );
         },
         change( delta ) {
-            component.changeDate(
-                change( component.options.date, 'FullYear', delta )
+            component[ ref( 'changeDate' ) ](
+                change( component.options[ ref( 'date' ) ], 'FullYear', delta )
             );
         },
         select( date ) {
-            component.changeDate( date );
-            component.changeMode( 'dom' );
+            component[ ref( 'changeDate' ) ]( date );
+            component[ ref( 'changeMode' ) ]( 'dom' );
         }
     };
 }

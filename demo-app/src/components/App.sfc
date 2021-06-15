@@ -7,42 +7,40 @@
         </pre>
         <DateTimePicker
             value={{date}}
-            onChange={{::this.dateChanged}}
+            onChange={{this[ ref( 'dateChanged' ) ]}}
         />
 
         <p>
-            <h3>Selected: {{this.formatString( date )}}</h3>
+            <h3>Selected: {{date | formatString}}</h3>
         </p>
     </main>
 
 </template>
 
 <script>
-    import { mergeWithTemplate, options } from 'sham-ui-macro/babel.macro';
 
-    @mergeWithTemplate
-    class App extends Template {
-        @options date = new Date();
+    function App( options, update ) {
+        const date = ref();
 
-        dateChanged( date ) {
-            this.update( {
-                date
-            } );
-        }
+        options( {
+            [ date ]: new Date()
+        } );
 
-        formatString( date ) {
-            return date.toLocaleString( 'default', {
-                weekday: 'long',
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-                'hour12': false,
-                'hour': '2-digit',
-                'minute': '2-digit',
-                'second': '2-digit'
-            } );
-        }
+        this[ ref( 'dateChanged' ) ] = value => update( {
+            [ date ]: value
+        } );
+
+        this.filters.formatString = ( date ) => date.toLocaleString( 'default', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            'hour12': false,
+            'hour': '2-digit',
+            'minute': '2-digit',
+            'second': '2-digit'
+        } );
     }
 
-    export default App;
+    export default Component( Template, App );
 </script>

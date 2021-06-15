@@ -2,7 +2,6 @@
 
 exports[`renders correctly 1`] = `
 Object {
-  "Constructor": "Time",
   "Options": Object {
     "ID": "component",
     "date": 2020-04-23T06:02:17.000Z,
@@ -28,6 +27,7 @@ Object {
     <td></td>
     <td class=\\"change\\"><span>+</span></td>
   </tr>
+  <!--0-->
   <tr>
     <td class=\\"hour\\">13</td>
     <td>:</td>
@@ -42,6 +42,7 @@ Object {
     <td></td>
     <td class=\\"change\\"><span>–</span></td>
   </tr>
+  <!--1-->
 </tbody>
 ",
 }

@@ -34,29 +34,28 @@
 
 
 <script>
-    import { mergeWithTemplate, options } from 'sham-ui-macro/babel.macro';
+    function ItemList( options ) {
+        options( {
+            [ ref( 'value' ) ]: new Date(),
+            [ ref( 'date' ) ]: new Date(),
+            [ ref( 'classForDate' ) ]: () => '',
+            [ ref( 'isDateSelectable' ) ]: () => true,
 
-    @mergeWithTemplate
-    class ItemList extends Template {
-        @options value = new Date();
-        @options date = new Date();
-        @options classForDate = () => '';
-        @options isDateSelectable = () => true;
+            [ ref( 'prevSymbol' ) ]: String.fromCharCode( 0x25C2 ),
+            [ ref( 'nextSymbol' ) ]: String.fromCharCode( 0x25B8 ),
 
-        @options prevSymbol = String.fromCharCode( 0x25C2 );
-        @options nextSymbol = String.fromCharCode( 0x25B8 );
+            [ ref( 'prevDelta' ) ]: -1,
+            [ ref( 'nextDelta' ) ]: 1,
+            [ ref( 'showChange' ) ]: true,
 
-        @options showChange = true;
-        @options prevDelta = -1;
-        @options nextDelta = 1;
-        @options header = () => {};
-        @options items = () => [];
+            [ ref( 'header' ) ]: () => {},
+            [ ref( 'items' ) ]: () => [],
 
-
-        @options clickOnHeader = () => {};
-        @options change = () => {};
-        @options select() {}
+            [ ref( 'clickOnHeader' ) ]: () => {},
+            [ ref( 'change' ) ]: () => {},
+            [ ref( 'select' ) ]: () => {}
+        } );
     }
 
-    export default ItemList;
+    export default Component( Template, ItemList );
 </script>

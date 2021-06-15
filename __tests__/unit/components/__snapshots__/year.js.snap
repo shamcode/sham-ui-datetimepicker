@@ -2,7 +2,6 @@
 
 exports[`change 1`] = `
 Object {
-  "Constructor": "ItemList",
   "Options": Object {
     "ID": "component",
     "change": [Function],
@@ -43,7 +42,6 @@ Object {
 
 exports[`change 2`] = `
 Object {
-  "Constructor": "ItemList",
   "Options": Object {
     "ID": "component",
     "change": [Function],
@@ -84,7 +82,6 @@ Object {
 
 exports[`change 3`] = `
 Object {
-  "Constructor": "ItemList",
   "Options": Object {
     "ID": "component",
     "change": [Function],
@@ -125,7 +122,6 @@ Object {
 
 exports[`renders correctly 1`] = `
 Object {
-  "Constructor": "ItemList",
   "Options": Object {
     "ID": "component",
     "change": [Function],

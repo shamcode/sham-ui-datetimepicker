@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Object {
+  "Options": Object {
+    "ID": "component",
+    "date": 2020-04-23T06:02:17.000Z,
+    "delta": 0,
+    "directives": Object {
+      "onclick": [Function],
+    },
+    "onChange": [Function],
+    "symbol": "",
+    "today": 2020-04-25T08:03:30.000Z,
+    "value": 2020-04-23T06:02:17.000Z,
+  },
+  "html": "
+<tr>
+  <td class=\\"change\\"><span></span></td>
+  <td></td>
+  <td class=\\"change\\"><span></span></td>
+  <td></td>
+  <td class=\\"change\\"><span></span></td>
+</tr>
+",
+}
+`;

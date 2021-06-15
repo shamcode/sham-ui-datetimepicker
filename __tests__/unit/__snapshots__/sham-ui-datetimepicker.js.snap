@@ -2,7 +2,6 @@
 
 exports[`change month & time 1`] = `
 Object {
-  "Constructor": "DateTimePicker",
   "Options": Object {
     "ID": "component",
     "classForDate": [Function],
@@ -103,6 +102,7 @@ Object {
       <td></td>
       <td class=\\"change\\"><span>+</span></td>
     </tr>
+    <!--0-->
     <tr>
       <td class=\\"hour\\">01</td>
       <td>:</td>
@@ -117,7 +117,9 @@ Object {
       <td></td>
       <td class=\\"change\\"><span>–</span></td>
     </tr>
+    <!--1-->
   </tbody>
+  <!--0-->
 </table>
 ",
 }
@@ -125,7 +127,6 @@ Object {
 
 exports[`change month & time 2`] = `
 Object {
-  "Constructor": "DateTimePicker",
   "Options": Object {
     "ID": "component",
     "classForDate": [Function],
@@ -290,7 +291,8 @@ Object {
       <th colspan=\\"7\\">01:00:59</th>
     </tr>
   </tfoot>
-  <!--if-->
+  <!--0-->
+  <!--0-->
 </table>
 ",
 }
@@ -298,7 +300,6 @@ Object {
 
 exports[`classForDate 1`] = `
 Object {
-  "Constructor": "DateTimePicker",
   "Options": Object {
     "ID": "component",
     "classForDate": [Function],
@@ -430,7 +431,8 @@ Object {
       <th colspan=\\"7\\">13:02:17</th>
     </tr>
   </tfoot>
-  <!--if-->
+  <!--0-->
+  <!--0-->
 </table>
 ",
 }
@@ -438,7 +440,6 @@ Object {
 
 exports[`default onChange 1`] = `
 Object {
-  "Constructor": "DateTimePicker",
   "Options": Object {
     "ID": "component",
     "classForDate": [Function],
@@ -570,7 +571,8 @@ Object {
       <th colspan=\\"7\\">13:02:17</th>
     </tr>
   </tfoot>
-  <!--if-->
+  <!--0-->
+  <!--0-->
 </table>
 ",
 }
@@ -578,7 +580,6 @@ Object {
 
 exports[`isDateSelectable options 1`] = `
 Object {
-  "Constructor": "DateTimePicker",
   "Options": Object {
     "ID": "component",
     "classForDate": [Function],
@@ -710,7 +711,8 @@ Object {
       <th colspan=\\"7\\">13:02:17</th>
     </tr>
   </tfoot>
-  <!--if-->
+  <!--0-->
+  <!--0-->
 </table>
 ",
 }
@@ -718,7 +720,6 @@ Object {
 
 exports[`onChange 1`] = `
 Object {
-  "Constructor": "DateTimePicker",
   "Options": Object {
     "ID": "component",
     "classForDate": [Function],
@@ -862,7 +863,8 @@ Object {
       <th colspan=\\"7\\">00:00:00</th>
     </tr>
   </tfoot>
-  <!--if-->
+  <!--0-->
+  <!--0-->
 </table>
 ",
 }
@@ -870,7 +872,6 @@ Object {
 
 exports[`onChange for not allowed 1`] = `
 Object {
-  "Constructor": "DateTimePicker",
   "Options": Object {
     "ID": "component",
     "classForDate": [Function],
@@ -1002,7 +1003,8 @@ Object {
       <th colspan=\\"7\\">13:02:17</th>
     </tr>
   </tfoot>
-  <!--if-->
+  <!--0-->
+  <!--0-->
 </table>
 ",
 }
@@ -1010,7 +1012,6 @@ Object {
 
 exports[`renders correctly 1`] = `
 Object {
-  "Constructor": "DateTimePicker",
   "Options": Object {
     "ID": "component",
     "classForDate": [Function],
@@ -1142,7 +1143,8 @@ Object {
       <th colspan=\\"7\\">13:02:17</th>
     </tr>
   </tfoot>
-  <!--if-->
+  <!--0-->
+  <!--0-->
 </table>
 ",
 }
