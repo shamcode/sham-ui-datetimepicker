@@ -1,14 +1,14 @@
-import { ref } from 'sham-ui-macro/ref.macro';
+import { $ } from 'sham-ui-macro/ref.macro';
 import { formatDate, change, clone } from '../utils/date';
 import { classes } from '../utils/string';
 
 export function minutesOptions( component ) {
     return {
-        [ ref( 'showChange' ) ]: false,
-        [ ref( 'header' ) ]( date ) {
+        [ $.showChange ]: false,
+        [ $.header ]( date ) {
             return formatDate( date, 1 + 2 + 4 + 8 );
         },
-        [ ref( 'items' ) ]( current, date, classForDate, isDateSelectable ) {
+        [ $.items ]( current, date, classForDate, isDateSelectable ) {
             const minutes = new Array( 12 );
             let d = new Date(
                 date.getFullYear(),
@@ -32,12 +32,12 @@ export function minutesOptions( component ) {
             }
             return minutes;
         },
-        [ ref( 'clickOnHeader' ) ]() {
-            component[ ref( 'changeMode' ) ]( 'dom' );
+        [ $.clickOnHeader ]() {
+            component[ $.changeMode ]( 'dom' );
         },
         select( date ) {
-            component[ ref( 'changeValue' ) ]( date );
-            component[ ref( 'changeMode' ) ]( 'time' );
+            component[ $.changeValue ]( date );
+            component[ $.changeMode ]( 'time' );
         }
     };
 }

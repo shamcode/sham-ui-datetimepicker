@@ -17,9 +17,9 @@
 <script>
     function TimeChange( options ) {
         options( {
-            [ ref( 'symbol' ) ]: '',
-            [ ref( 'delta' ) ]: 0,
-            [ ref( 'onChange' ) ]: () => {}
+            [ $.symbol ]: '',
+            [ $.delta ]: 0,
+            [ $.onChange ]: () => {}
         } );
     }
     export default Component( Template, TimeChange );

@@ -1,13 +1,13 @@
 <template>
     <thead>
         <tr>
-            <th :onclick={{this[ ref( 'changeMonth' ) ].bind( this, -1 )}}>
+            <th :onclick={{this$.changeMonth.bind( this, -1 )}}>
                 <span>{{prevSymbol}}</span>
             </th>
             <th colspan="5" class="picker-switch" :onclick={{changeMode.bind( this, 'months' )}}>
                 {{ date | formatDate( 1 + 2 ) | title }}
             </th>
-            <th :onclick={{this[ ref( 'changeMonth' ) ].bind( this, 1 )}}>
+            <th :onclick={{this$.changeMonth.bind( this, 1 )}}>
                 <span>{{nextSymbol}}</span>
             </th>
         </tr>
@@ -18,7 +18,7 @@
         </tr>
     </thead>
     <tbody>
-        {% for week of this[ ref( 'getMonthsDays' ) ]( value, date, today, classForDate, isDateSelectable ) %}
+        {% for week of this$.getMonthsDays( value, date, today, classForDate, isDateSelectable ) %}
             <tr>
                 {% for day of week %}
                     <td
@@ -63,30 +63,30 @@
     };
 
     function DayOfMonth( options, update ) {
-        const date = ref();
-        const changeDate = ref();
+        const date = $();
+        const changeDate = $();
 
         const state = options( {
-            [ ref( 'value' ) ]: new Date(),
+            [ $.value ]: new Date(),
             [ date ]: new Date(),
-            [ ref( 'today' ) ]: new Date(),
-            [ ref( 'showTime' ) ]: true,
-            [ ref( 'isDateSelectable' ) ]: () => true,
-            [ ref( 'classForDate' ) ]: () => '',
+            [ $.today ]: new Date(),
+            [ $.showTime ]: true,
+            [ $.isDateSelectable ]: () => true,
+            [ $.classForDate ]: () => '',
             [ changeDate ]: ( value ) => update( {
                 [ date ]: value
             } ),
-            [ ref( 'prevSymbol' ) ]: String.fromCharCode( 0x25C2 ),
-            [ ref( 'nextSymbol' ) ]: String.fromCharCode( 0x25B8 ),
-            [ ref( 'weekDays' ) ]: daysOfWeek(),
-            [ ref( 'changeValue' ) ]: () => {},
-            [ ref( 'changeMode' ) ]: () => {}
+            [ $.prevSymbol ]: String.fromCharCode( 0x25C2 ),
+            [ $.nextSymbol ]: String.fromCharCode( 0x25B8 ),
+            [ $.weekDays ]: daysOfWeek(),
+            [ $.changeValue ]: () => {},
+            [ $.changeMode ]: () => {}
         } );
 
         this.filters.formatDate = formatDate;
         this.filters.title = title;
 
-        this[ ref( 'getMonthsDays' ) ] = ( current, date, today, classForDate, isDateSelectable ) => {
+        this$.getMonthsDays = ( current, date, today, classForDate, isDateSelectable ) => {
             const monthsDays = new Array( 6 );
             const firstDayOfMonth = new Date( date.getFullYear(), date.getMonth(), 1 );
             let firstWeekday = firstDayOfMonth.getDay() - 1;
@@ -116,7 +116,7 @@
             return monthsDays;
         };
 
-        this[ ref( 'changeMonth' ) ] = delta => state[ changeDate ](
+        this$.changeMonth = delta => state[ changeDate ](
             change( state[ date ], 'Month', delta )
         );
     }

@@ -16,9 +16,9 @@
             showTime={{showTime}}
             isDateSelectable={{isDateSelectable}}
             classForDate={{classForDate}}
-            changeDate={{this[ ref( 'changeDate' ) ]}}
-            changeValue={{this[ ref( 'changeValue' ) ]}}
-            changeMode={{this[ ref( 'changeMode' ) ]}}
+            changeDate={{this$.changeDate}}
+            changeValue={{this$.changeValue}}
+            changeMode={{this$.changeMode}}
             {{...componentForMode[ 1 ]( this )}}
         />
     </table>
@@ -36,28 +36,28 @@
     import DayOfMonth from './components/day-of-month.sfc';
 
     function DateTimePicker( options, update ) {
-        const value = ref();
-        const onChange = ref();
-        const isDateSelectable = ref();
-        const classForDate = ref();
+        const value = $();
+        const onChange = $();
+        const isDateSelectable = $();
+        const classForDate = $();
 
-        const date = ref();
-        const displayMode = ref();
+        const date = $();
+        const displayMode = $();
 
         const state = options( {
 
             // Logic
             [ value ]: new Date(),
             [ onChange ]: () => {},
-            [ ref( 'showTime' ) ]: true,
+            [ $.showTime ]: true,
             [ isDateSelectable ]: () => true,
             [ classForDate ]: () => '',
 
             // Style
-            [ ref( 'prevSymbol' ) ]: String.fromCharCode( 0x25C2 ),
-            [ ref( 'nextSymbol' ) ]: String.fromCharCode( 0x25B8 ),
-            [ ref( 'incSymbol' ) ]: '+',
-            [ ref( 'decSymbol' ) ]: String.fromCharCode( 0x2013 ),
+            [ $.prevSymbol ]: String.fromCharCode( 0x25C2 ),
+            [ $.nextSymbol ]: String.fromCharCode( 0x25B8 ),
+            [ $.incSymbol ]: '+',
+            [ $.decSymbol ]: String.fromCharCode( 0x2013 ),
 
             // Inner
             [ date ]: {
@@ -65,9 +65,9 @@
                     return new Date( state[ value ].getTime() );
                 }
             },
-            [ ref( 'today' ) ]: new Date(),
+            [ $.today ]: new Date(),
             [ displayMode ]: 'dom',
-            [ ref( 'componentsByMode' ) ]: {
+            [ $.componentsByMode ]: {
                 time: [ Time, () => null ],
                 dom: [ DayOfMonth, () => null ],
                 months: [ ItemsList, monthOptions ],
@@ -79,11 +79,11 @@
             }
         } );
 
-        this[ ref( 'changeDate' ) ] = value => update( {
+        this$.changeDate = value => update( {
             [ date ]: value
         } );
 
-        this[ ref( 'changeValue' ) ] = value => {
+        this$.changeValue = value => {
             if ( state[ isDateSelectable ]( value ) ) {
                 update( {
                     [ date ]: new Date( value.getTime() )
@@ -92,7 +92,7 @@
             }
         };
 
-        this[ ref( 'changeMode' ) ] = value => update( {
+        this$.changeMode = value => update( {
             [ displayMode ]: value
         } );
     }

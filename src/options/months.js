@@ -1,16 +1,16 @@
-import { ref } from 'sham-ui-macro/ref.macro';
+import { $ } from 'sham-ui-macro/ref.macro';
 import { title, classes } from '../utils/string';
 import { clone, change, compare, formatDate } from '../utils/date';
 
 export function monthOptions( component ) {
     return {
-        [ ref( 'showChange' ) ]: true,
-        [ ref( 'prevDelta' ) ]: -1,
-        [ ref( 'nextDelta' ) ]: 1,
-        [ ref( 'header' ) ]( date ) {
+        [ $.showChange ]: true,
+        [ $.prevDelta ]: -1,
+        [ $.nextDelta ]: 1,
+        [ $.header ]( date ) {
             return formatDate( date, 1 );
         },
-        [ ref( 'items' ) ]( current, date, classForDate, isDateSelectable ) {
+        [ $.items ]( current, date, classForDate, isDateSelectable ) {
             const months = new Array( 12 );
             let d = new Date( date.getFullYear(), 0, 1 );
             for ( let i = 0; i < 12; i++ ) {
@@ -31,17 +31,17 @@ export function monthOptions( component ) {
             }
             return months;
         },
-        [ ref( 'clickOnHeader' ) ]() {
-            component[ ref( 'changeMode' ) ]( 'year' );
+        [ $.clickOnHeader ]() {
+            component[ $.changeMode ]( 'year' );
         },
         change( delta ) {
-            component[ ref( 'changeDate' ) ](
-                change( component.options[ ref( 'date' ) ], 'FullYear', delta )
+            component[ $.changeDate ](
+                change( component.options[ $.date ], 'FullYear', delta )
             );
         },
         select( date ) {
-            component[ ref( 'changeDate' ) ]( date );
-            component[ ref( 'changeMode' ) ]( 'dom' );
+            component[ $.changeDate ]( date );
+            component[ $.changeMode ]( 'dom' );
         }
     };
 }

@@ -1,4 +1,4 @@
-import { ref } from 'sham-ui-macro/ref.macro';
+import { $ } from 'sham-ui-macro/ref.macro';
 import { formatDate, change } from '../utils/date';
 import { classes } from '../utils/string';
 
@@ -12,16 +12,16 @@ const isCurrentYearRange = ( current, yearRange ) => {
 
 export function yearsRangeOptions( component ) {
     return {
-        [ ref( 'showChange' ) ]: true,
-        [ ref( 'prevDelta' ) ]: -100,
-        [ ref( 'nextDelta' ) ]: 100,
-        [ ref( 'header' ) ]( date ) {
+        [ $.showChange ]: true,
+        [ $.prevDelta ]: -100,
+        [ $.nextDelta ]: 100,
+        [ $.header ]( date ) {
             const century = getCentury( date );
             const from = new Date( century - 1, 0, 1 );
             const to = new Date( century + 99, 0, 1 );
             return `${formatDate( from, 1 )} - ${formatDate( to, 1 )}`;
         },
-        [ ref( 'items' ) ]( current, date ) {
+        [ $.items ]( current, date ) {
             const years = new Array( 10 );
             const century = getCentury( date );
             let d = new Date( century, 0, 1 );
@@ -44,14 +44,14 @@ export function yearsRangeOptions( component ) {
             }
             return years;
         },
-        [ ref( 'change' ) ]( delta ) {
-            component[ ref( 'changeDate' ) ](
-                change( component.options[ ref( 'date' ) ], 'FullYear', delta )
+        [ $.change ]( delta ) {
+            component[ $.changeDate ](
+                change( component.options[ $.date ], 'FullYear', delta )
             );
         },
-        [ ref( 'select' ) ]( date ) {
-            component[ ref( 'changeDate' ) ]( date );
-            component[ ref( 'changeMode' ) ]( 'year' );
+        [ $.select ]( date ) {
+            component[ $.changeDate ]( date );
+            component[ $.changeMode ]( 'year' );
         }
     };
 }

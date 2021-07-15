@@ -7,7 +7,7 @@
         </pre>
         <DateTimePicker
             value={{date}}
-            onChange={{this[ ref( 'dateChanged' ) ]}}
+            onChange={{this$.dateChanged}}
         />
 
         <p>
@@ -20,13 +20,13 @@
 <script>
 
     function App( options, update ) {
-        const date = ref();
+        const date = $();
 
         options( {
             [ date ]: new Date()
         } );
 
-        this[ ref( 'dateChanged' ) ] = value => update( {
+        this$.dateChanged = value => update( {
             [ date ]: value
         } );
 

@@ -12,7 +12,7 @@
         <TimeChanges
             symbol={{incSymbol}}
             delta={{1}}
-            onChange={{this[ ref( 'change' ) ]}}
+            onChange={{this$.change}}
         />
         <tr>
             <td class="hour" :onclick={{changeMode.bind( this, 'hours' )}}>
@@ -30,7 +30,7 @@
         <TimeChanges
             symbol={{decSymbol}}
             delta={{-1}}
-            onChange={{this[ ref( 'change' ) ]}}
+            onChange={{this$.change}}
         />
     </tbody>
 </template>
@@ -39,20 +39,20 @@
     import { formatDate, change } from '../utils/date';
 
     function Time( options ) {
-        const date = ref();
-        const changeValue = ref();
+        const date = $();
+        const changeValue = $();
 
         const state = options( {
-            [ ref( 'value' ) ]: new Date(),
+            [ $.value ]: new Date(),
             [ date ]: new Date(),
 
-            [ ref( 'incSymbol' ) ]: '+',
-            [ ref( 'decSymbol' ) ]: String.fromCharCode( 0x2013 )
+            [ $.incSymbol ]: '+',
+            [ $.decSymbol ]: String.fromCharCode( 0x2013 )
         } );
 
         this.filters.formatDate = formatDate;
 
-        this[ ref( 'change' ) ] = ( type, delta ) => state[ changeValue ](
+        this$.change = ( type, delta ) => state[ changeValue ](
             change( state[ date ], type, delta )
         );
     }

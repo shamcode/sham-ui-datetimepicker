@@ -36,24 +36,24 @@
 <script>
     function ItemList( options ) {
         options( {
-            [ ref( 'value' ) ]: new Date(),
-            [ ref( 'date' ) ]: new Date(),
-            [ ref( 'classForDate' ) ]: () => '',
-            [ ref( 'isDateSelectable' ) ]: () => true,
+            [ $.value ]: new Date(),
+            [ $.date ]: new Date(),
+            [ $.classForDate ]: () => '',
+            [ $.isDateSelectable ]: () => true,
 
-            [ ref( 'prevSymbol' ) ]: String.fromCharCode( 0x25C2 ),
-            [ ref( 'nextSymbol' ) ]: String.fromCharCode( 0x25B8 ),
+            [ $.prevSymbol ]: String.fromCharCode( 0x25C2 ),
+            [ $.nextSymbol ]: String.fromCharCode( 0x25B8 ),
 
-            [ ref( 'prevDelta' ) ]: -1,
-            [ ref( 'nextDelta' ) ]: 1,
-            [ ref( 'showChange' ) ]: true,
+            [ $.prevDelta ]: -1,
+            [ $.nextDelta ]: 1,
+            [ $.showChange ]: true,
 
-            [ ref( 'header' ) ]: () => {},
-            [ ref( 'items' ) ]: () => [],
+            [ $.header ]: () => {},
+            [ $.items ]: () => [],
 
-            [ ref( 'clickOnHeader' ) ]: () => {},
-            [ ref( 'change' ) ]: () => {},
-            [ ref( 'select' ) ]: () => {}
+            [ $.clickOnHeader ]: () => {},
+            [ $.change ]: () => {},
+            [ $.select ]: () => {}
         } );
     }
 
