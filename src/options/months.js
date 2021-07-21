@@ -34,12 +34,12 @@ export function monthOptions( component ) {
         [ $.clickOnHeader ]() {
             component[ $.changeMode ]( 'year' );
         },
-        change( delta ) {
+        [ $.change ]( delta ) {
             component[ $.changeDate ](
                 change( component.options[ $.date ], 'FullYear', delta )
             );
         },
-        select( date ) {
+        [ $.select ]( date ) {
             component[ $.changeDate ]( date );
             component[ $.changeMode ]( 'dom' );
         }

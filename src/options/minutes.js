@@ -35,7 +35,7 @@ export function minutesOptions( component ) {
         [ $.clickOnHeader ]() {
             component[ $.changeMode ]( 'dom' );
         },
-        select( date ) {
+        [ $.select ]( date ) {
             component[ $.changeValue ]( date );
             component[ $.changeMode ]( 'time' );
         }

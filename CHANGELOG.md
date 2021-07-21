@@ -1,3 +1,6 @@
+## 1.0.0-alpha.3
+* Fix migrations
+
 ## 1.0.0-alpha.2
 * Update dependencies
 
