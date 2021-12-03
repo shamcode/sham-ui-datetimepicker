@@ -8,7 +8,7 @@ Object {
     "changeMode": [Function],
     "changeValue": [Function],
     "classForDate": [Function],
-    "date": 2015-03-23T07:02:17.000Z,
+    "date": 2015-03-23T06:02:17.000Z,
     "directives": Object {
       "onclick": [Function],
     },
@@ -17,7 +17,7 @@ Object {
     "prevSymbol": "◂",
     "showTime": true,
     "today": 2020-04-25T08:03:30.000Z,
-    "value": 2015-02-23T07:02:17.000Z,
+    "value": 2015-02-23T06:02:17.000Z,
     "weekDays": Array [
       "Пн",
       "Вт",
@@ -119,7 +119,7 @@ Object {
     "changeMode": [Function],
     "changeValue": [Function],
     "classForDate": [Function],
-    "date": 2015-02-23T07:02:17.000Z,
+    "date": 2015-02-23T06:02:17.000Z,
     "directives": Object {
       "onclick": [Function],
     },
@@ -128,7 +128,7 @@ Object {
     "prevSymbol": "◂",
     "showTime": true,
     "today": 2020-04-25T08:03:30.000Z,
-    "value": 2015-02-23T07:02:17.000Z,
+    "value": 2015-02-23T06:02:17.000Z,
     "weekDays": Array [
       "Пн",
       "Вт",
@@ -230,7 +230,7 @@ Object {
     "changeMode": [Function],
     "changeValue": [Function],
     "classForDate": [Function],
-    "date": 2015-02-23T07:02:17.000Z,
+    "date": 2015-02-23T06:02:17.000Z,
     "directives": Object {
       "onclick": [Function],
     },
@@ -239,7 +239,7 @@ Object {
     "prevSymbol": "◂",
     "showTime": true,
     "today": 2020-04-25T08:03:30.000Z,
-    "value": 2015-02-23T07:02:17.000Z,
+    "value": 2015-02-23T06:02:17.000Z,
     "weekDays": Array [
       "Пн",
       "Вт",

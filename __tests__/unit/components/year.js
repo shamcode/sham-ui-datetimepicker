@@ -43,7 +43,7 @@ it( 'change', () => {
 
     meta.component.container.querySelector( 'thead tr th:first-child' ).click();
     expect( changeDate ).toHaveBeenCalledTimes( 1 );
-    expect( changeDate.mock.calls[ 0 ][ 0 ].toISOString() ).toBe( '2010-04-23T06:02:17.000Z' );
+    expect( changeDate.mock.calls[ 0 ][ 0 ].toISOString() ).toBe( '2010-04-23T05:02:17.000Z' );
     expect( meta.toJSON() ).toMatchSnapshot();
 
     meta.component.container.querySelector( 'thead tr th:last-child' ).click();
