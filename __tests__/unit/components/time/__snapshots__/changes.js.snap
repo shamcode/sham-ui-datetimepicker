@@ -3,12 +3,8 @@
 exports[`renders correctly 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "date": 2020-04-23T06:02:17.000Z,
     "delta": 0,
-    "directives": Object {
-      "onclick": [Function],
-    },
     "onChange": [Function],
     "symbol": "",
     "today": 2020-04-25T08:03:30.000Z,

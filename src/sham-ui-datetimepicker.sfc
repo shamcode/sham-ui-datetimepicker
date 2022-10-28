@@ -35,7 +35,7 @@
     import Time from './components/time.sfc';
     import DayOfMonth from './components/day-of-month.sfc';
 
-    function DateTimePicker( options, update ) {
+    function DateTimePicker( options ) {
         const value = $();
         const onChange = $();
         const isDateSelectable = $();
@@ -79,22 +79,16 @@
             }
         } );
 
-        this$.changeDate = value => update( {
-            [ date ]: value
-        } );
+        this$.changeDate = value => state[ date ] = value;
 
         this$.changeValue = value => {
             if ( state[ isDateSelectable ]( value ) ) {
-                update( {
-                    [ date ]: new Date( value.getTime() )
-                } );
+                state[ date ] = new Date( value.getTime() );
                 state[ onChange ]( value );
             }
         };
 
-        this$.changeMode = value => update( {
-            [ displayMode ]: value
-        } );
+        this$.changeMode = value => state[ displayMode ] = value;
     }
 
     export default Component( Template, DateTimePicker );

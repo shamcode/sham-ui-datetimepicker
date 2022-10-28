@@ -38,24 +38,29 @@
 <script>
     import { formatDate, change } from '../utils/date';
 
+    function extendContext() {
+        this.ctx.appendFilters( {
+            formatDate
+        } );
+    }
+
     function Time( options ) {
         const date = $();
         const changeValue = $();
 
         const state = options( {
             [ $.value ]: new Date(),
+            [ $.changeValue ]: () => {},
             [ date ]: new Date(),
 
             [ $.incSymbol ]: '+',
             [ $.decSymbol ]: String.fromCharCode( 0x2013 )
         } );
 
-        this.filters.formatDate = formatDate;
-
         this$.change = ( type, delta ) => state[ changeValue ](
             change( state[ date ], type, delta )
         );
     }
 
-    export default Component( Template, Time );
+    export default Component( extendContext, Template, Time );
 </script>

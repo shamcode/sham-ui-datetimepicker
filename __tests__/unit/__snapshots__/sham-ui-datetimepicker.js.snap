@@ -3,7 +3,6 @@
 exports[`change month & time 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "classForDate": [Function],
     "componentsByMode": Object {
       "dom": Array [
@@ -41,9 +40,6 @@ Object {
     },
     "date": 2020-05-14T18:00:59.000Z,
     "decSymbol": "–",
-    "directives": Object {
-      "onclick": [Function],
-    },
     "displayMode": "time",
     "incSymbol": "+",
     "isDateSelectable": [Function],
@@ -128,7 +124,6 @@ Object {
 exports[`change month & time 2`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "classForDate": [Function],
     "componentsByMode": Object {
       "dom": Array [
@@ -166,9 +161,6 @@ Object {
     },
     "date": 2020-05-14T18:00:59.000Z,
     "decSymbol": "–",
-    "directives": Object {
-      "onclick": [Function],
-    },
     "displayMode": "dom",
     "incSymbol": "+",
     "isDateSelectable": [Function],
@@ -301,7 +293,6 @@ Object {
 exports[`classForDate 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "classForDate": [Function],
     "componentsByMode": Object {
       "dom": Array [
@@ -339,9 +330,6 @@ Object {
     },
     "date": 2020-04-23T06:02:17.000Z,
     "decSymbol": "–",
-    "directives": Object {
-      "onclick": [Function],
-    },
     "displayMode": "dom",
     "incSymbol": "+",
     "isDateSelectable": [Function],
@@ -441,7 +429,6 @@ Object {
 exports[`default onChange 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "classForDate": [Function],
     "componentsByMode": Object {
       "dom": Array [
@@ -479,9 +466,6 @@ Object {
     },
     "date": 2020-04-16T17:00:00.000Z,
     "decSymbol": "–",
-    "directives": Object {
-      "onclick": [Function],
-    },
     "displayMode": "dom",
     "incSymbol": "+",
     "isDateSelectable": [Function],
@@ -581,7 +565,6 @@ Object {
 exports[`isDateSelectable options 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "classForDate": [Function],
     "componentsByMode": Object {
       "dom": Array [
@@ -619,9 +602,6 @@ Object {
     },
     "date": 2020-04-23T06:02:17.000Z,
     "decSymbol": "–",
-    "directives": Object {
-      "onclick": [Function],
-    },
     "displayMode": "dom",
     "incSymbol": "+",
     "isDateSelectable": [Function],
@@ -721,7 +701,6 @@ Object {
 exports[`onChange 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "classForDate": [Function],
     "componentsByMode": Object {
       "dom": Array [
@@ -759,9 +738,6 @@ Object {
     },
     "date": 2020-04-16T17:00:00.000Z,
     "decSymbol": "–",
-    "directives": Object {
-      "onclick": [Function],
-    },
     "displayMode": "dom",
     "incSymbol": "+",
     "isDateSelectable": [Function],
@@ -873,7 +849,6 @@ Object {
 exports[`onChange for not allowed 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "classForDate": [Function],
     "componentsByMode": Object {
       "dom": Array [
@@ -911,9 +886,6 @@ Object {
     },
     "date": 2020-04-23T06:02:17.000Z,
     "decSymbol": "–",
-    "directives": Object {
-      "onclick": [Function],
-    },
     "displayMode": "dom",
     "incSymbol": "+",
     "isDateSelectable": [Function],
@@ -1013,7 +985,6 @@ Object {
 exports[`renders correctly 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "classForDate": [Function],
     "componentsByMode": Object {
       "dom": Array [
@@ -1051,9 +1022,6 @@ Object {
     },
     "date": 2020-04-23T06:02:17.000Z,
     "decSymbol": "–",
-    "directives": Object {
-      "onclick": [Function],
-    },
     "displayMode": "dom",
     "incSymbol": "+",
     "isDateSelectable": [Function],

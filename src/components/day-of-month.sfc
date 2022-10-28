@@ -46,6 +46,13 @@
     import { title, classes } from '../utils/string';
     import { change, clone, compare, formatDate } from '../utils/date';
 
+    function extendContext() {
+        this.ctx.appendFilters( {
+            formatDate,
+            title
+        } );
+    }
+
     /**
      * Get days of week names in default locale
      * @return {String[]}
@@ -62,7 +69,7 @@
         return daysOfWeek;
     };
 
-    function DayOfMonth( options, update ) {
+    function DayOfMonth( options ) {
         const date = $();
         const changeDate = $();
 
@@ -73,18 +80,13 @@
             [ $.showTime ]: true,
             [ $.isDateSelectable ]: () => true,
             [ $.classForDate ]: () => '',
-            [ changeDate ]: ( value ) => update( {
-                [ date ]: value
-            } ),
+            [ changeDate ]: value => state[ date ] = value,
             [ $.prevSymbol ]: String.fromCharCode( 0x25C2 ),
             [ $.nextSymbol ]: String.fromCharCode( 0x25B8 ),
             [ $.weekDays ]: daysOfWeek(),
             [ $.changeValue ]: () => {},
             [ $.changeMode ]: () => {}
         } );
-
-        this.filters.formatDate = formatDate;
-        this.filters.title = title;
 
         this$.getMonthsDays = ( current, date, today, classForDate, isDateSelectable ) => {
             const monthsDays = new Array( 6 );
@@ -120,5 +122,5 @@
             change( state[ date ], 'Month', delta )
         );
     }
-    export default Component( Template, DayOfMonth );
+    export default Component( extendContext, Template, DayOfMonth );
 </script>

@@ -6,7 +6,8 @@ it( 'renders correctly', () => {
     const meta = renderer( DayOfMonth, {
         today: new Date( 2020, 3, 25, 15, 3, 30 ),
         value: new Date( 2015, 1, 23, 13, 2, 17 ),
-        date: new Date( 2015, 1, 23, 13, 2, 17 ),
+        date: new Date( 2015, 1, 23, 13, 2, 17 )
+    }, {
         directives: {
             onclick
         }
@@ -19,13 +20,14 @@ it( 'changeMonth', () => {
     const meta = renderer( DayOfMonth, {
         today: new Date( 2020, 3, 25, 15, 3, 30 ),
         value: new Date( 2015, 1, 23, 13, 2, 17 ),
-        date: new Date( 2015, 1, 23, 13, 2, 17 ),
+        date: new Date( 2015, 1, 23, 13, 2, 17 )
+    }, {
         directives: {
             onclick
         }
     } );
-    meta.component.container.querySelector( 'thead tr:first-child th:last-child' ).click();
+    meta.ctx.container.querySelector( 'thead tr:first-child th:last-child' ).click();
     expect( meta.toJSON() ).toMatchSnapshot();
-    meta.component.container.querySelector( 'thead tr:first-child th:first-child' ).click();
+    meta.ctx.container.querySelector( 'thead tr:first-child th:first-child' ).click();
     expect( meta.toJSON() ).toMatchSnapshot();
 } );

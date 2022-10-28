@@ -8,10 +8,11 @@ it( 'renders correctly', () => {
         today: new Date( 2020, 3, 25, 15, 3, 30 ),
         value: new Date( 2020, 3, 23, 13, 2, 17 ),
         date: new Date( 2020, 3, 23, 13, 2, 17 ),
+        ...yearOptions()
+    }, {
         directives: {
             onclick
-        },
-        ...yearOptions()
+        }
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
 } );
@@ -25,9 +26,6 @@ it( 'change', () => {
         today: new Date( 2020, 3, 25, 15, 3, 30 ),
         value,
         date: new Date( 2020, 3, 23, 13, 2, 17 ),
-        directives: {
-            onclick
-        },
         isDateSelectable( date ) {
             return date.getFullYear() <= 2020;
         },
@@ -38,26 +36,30 @@ it( 'change', () => {
                 date: new Date( value.getTime() )
             }
         } )
+    }, {
+        directives: {
+            onclick
+        }
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
 
-    meta.component.container.querySelector( 'thead tr th:first-child' ).click();
+    meta.ctx.container.querySelector( 'thead tr th:first-child' ).click();
     expect( changeDate ).toHaveBeenCalledTimes( 1 );
     expect( changeDate.mock.calls[ 0 ][ 0 ].toISOString() ).toBe( '2010-04-23T05:02:17.000Z' );
     expect( meta.toJSON() ).toMatchSnapshot();
 
-    meta.component.container.querySelector( 'thead tr th:last-child' ).click();
+    meta.ctx.container.querySelector( 'thead tr th:last-child' ).click();
     expect( changeDate ).toHaveBeenCalledTimes( 2 );
     expect( changeDate.mock.calls[ 1 ][ 0 ].toISOString() ).toBe( '2020-04-23T06:02:17.000Z' );
     expect( meta.toJSON() ).toMatchSnapshot();
 
-    meta.component.container.querySelector( 'tbody span:nth-child(3)' ).click();
+    meta.ctx.container.querySelector( 'tbody span:nth-child(3)' ).click();
     expect( changeDate ).toHaveBeenCalledTimes( 3 );
     expect( changeDate.mock.calls[ 2 ][ 0 ].toISOString() ).toBe( '2016-12-31T17:00:00.000Z' );
     expect( changeMode ).toHaveBeenCalledTimes( 1 );
     expect( changeMode.mock.calls[ 0 ][ 0 ] ).toBe( 'months' );
 
-    meta.component.container.querySelector( 'thead tr th:nth-child(2)' ).click();
+    meta.ctx.container.querySelector( 'thead tr th:nth-child(2)' ).click();
     expect( changeMode ).toHaveBeenCalledTimes( 2 );
     expect( changeMode.mock.calls[ 1 ][ 0 ] ).toBe( 'yearRange' );
 } );

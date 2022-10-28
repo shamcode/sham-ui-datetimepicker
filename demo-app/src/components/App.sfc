@@ -19,26 +19,26 @@
 
 <script>
 
-    function App( options, update ) {
+    function App( options ) {
         const date = $();
 
-        options( {
+        const state = options( {
             [ date ]: new Date()
         } );
 
-        this$.dateChanged = value => update( {
-            [ date ]: value
-        } );
+        this$.dateChanged = value => state[ date ] = value;
 
-        this.filters.formatString = ( date ) => date.toLocaleString( 'default', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            'hour12': false,
-            'hour': '2-digit',
-            'minute': '2-digit',
-            'second': '2-digit'
+        this.ctx.appendFilters( {
+            formatString: ( date ) => date.toLocaleString( 'default', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                'hour12': false,
+                'hour': '2-digit',
+                'minute': '2-digit',
+                'second': '2-digit'
+            } )
         } );
     }
 

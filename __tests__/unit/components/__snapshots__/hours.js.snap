@@ -3,14 +3,10 @@
 exports[`change 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "change": [Function],
     "classForDate": [Function],
     "clickOnHeader": [Function],
     "date": 2020-04-23T06:02:17.000Z,
-    "directives": Object {
-      "onclick": [Function],
-    },
     "header": [Function],
     "isDateSelectable": [Function],
     "items": [Function],
@@ -43,14 +39,10 @@ Object {
 exports[`renders correctly 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "change": [Function],
     "classForDate": [Function],
     "clickOnHeader": [Function],
     "date": 2020-04-23T06:02:17.000Z,
-    "directives": Object {
-      "onclick": [Function],
-    },
     "header": [Function],
     "isDateSelectable": [Function],
     "items": [Function],

@@ -3,15 +3,11 @@
 exports[`changeMonth 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "changeDate": [Function],
     "changeMode": [Function],
     "changeValue": [Function],
     "classForDate": [Function],
     "date": 2015-03-23T06:02:17.000Z,
-    "directives": Object {
-      "onclick": [Function],
-    },
     "isDateSelectable": [Function],
     "nextSymbol": "▸",
     "prevSymbol": "◂",
@@ -114,15 +110,11 @@ Object {
 exports[`changeMonth 2`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "changeDate": [Function],
     "changeMode": [Function],
     "changeValue": [Function],
     "classForDate": [Function],
     "date": 2015-02-23T06:02:17.000Z,
-    "directives": Object {
-      "onclick": [Function],
-    },
     "isDateSelectable": [Function],
     "nextSymbol": "▸",
     "prevSymbol": "◂",
@@ -225,15 +217,11 @@ Object {
 exports[`renders correctly 1`] = `
 Object {
   "Options": Object {
-    "ID": "component",
     "changeDate": [Function],
     "changeMode": [Function],
     "changeValue": [Function],
     "classForDate": [Function],
     "date": 2015-02-23T06:02:17.000Z,
-    "directives": Object {
-      "onclick": [Function],
-    },
     "isDateSelectable": [Function],
     "nextSymbol": "▸",
     "prevSymbol": "◂",
