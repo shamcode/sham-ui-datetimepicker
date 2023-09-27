@@ -1,3 +1,6 @@
+## 2.0.0-alpha.4
+* Rebuild
+
 ## 2.0.0-alpha.3
 * Update dependencies
 
