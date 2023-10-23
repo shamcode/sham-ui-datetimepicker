@@ -1,13 +1,13 @@
 <template>
     <thead>
         <tr>
-            <th :onclick={{this$.changeMonth.bind( this, -1 )}}>
+            <th :onclick={{() => this$.changeMonth( -1 )}}>
                 <span>{{prevSymbol}}</span>
             </th>
-            <th colspan="5" class="picker-switch" :onclick={{changeMode.bind( this, 'months' )}}>
+            <th colspan="5" class="picker-switch" :onclick={{() => changeMode( 'months' )}}>
                 {{ date | formatDate( 1 + 2 ) | title }}
             </th>
-            <th :onclick={{this$.changeMonth.bind( this, 1 )}}>
+            <th :onclick={{() => this$.changeMonth( 1 )}}>
                 <span>{{nextSymbol}}</span>
             </th>
         </tr>
@@ -22,7 +22,7 @@
             <tr>
                 {% for day of week %}
                     <td
-                        :onclick={{changeValue.bind( this, day.date )}}
+                        :onclick={{() => changeValue( day.date )}}
                         class={{day.class}}
                     >
                         {{day.date.getDate()}}
@@ -34,7 +34,7 @@
     {% if showTime %}
         <tfoot>
             <tr>
-                <th colspan="7" :onclick={{changeMode.bind( this, 'time' )}}>
+                <th colspan="7" :onclick={{() => changeMode( 'time' )}}>
                     {{ value | formatDate( 16 + 32 + 64 )}}
                 </th>
             </tr>

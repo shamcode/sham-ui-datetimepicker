@@ -1,14 +1,14 @@
 <template>
     <tr>
-        <td class="change" :onclick={{onChange.bind( this, 'Hours', delta )}}>
+        <td class="change" :onclick={{() => onChange( 'Hours', delta )}}>
             <span>{{symbol}}</span>
         </td>
         <td></td>
-        <td class="change" :onclick={{onChange.bind( this, 'Minutes', delta )}}>
+        <td class="change" :onclick={{() => onChange( 'Minutes', delta )}}>
             <span>{{symbol}}</span>
         </td>
         <td></td>
-        <td class="change" :onclick={{onChange.bind( this, 'Seconds', delta )}}>
+        <td class="change" :onclick={{() => onChange( 'Seconds', delta )}}>
             <span>{{symbol}}</span>
         </td>
     </tr>

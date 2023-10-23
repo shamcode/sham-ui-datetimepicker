@@ -3,7 +3,7 @@
 
     <thead>
         <tr>
-            <th colspan="5" class="picker-switch" :onclick={{changeMode.bind( this, 'dom' )}}>
+            <th colspan="5" class="picker-switch" :onclick={{() => changeMode( 'dom' )}}>
                 {{value | formatDate( 1 + 2 + 4 + 8 )}}
             </th>
         </tr>
@@ -15,15 +15,15 @@
             onChange={{this$.change}}
         />
         <tr>
-            <td class="hour" :onclick={{changeMode.bind( this, 'hours' )}}>
+            <td class="hour" :onclick={{() => changeMode( 'hours' )}}>
                 {{date | formatDate( 16 )}}
             </td>
             <td>:</td>
-            <td class="minute" :onclick={{changeMode.bind( this, 'minutes' )}}>
+            <td class="minute" :onclick={{() => changeMode( 'minutes' )}}>
                 {{date | formatDate( 32 )}}
             </td>
             <td>:</td>
-            <td class="second" :onclick={{changeMode.bind( this, 'seconds' )}}>
+            <td class="second" :onclick={{() => changeMode( 'seconds' )}}>
                 {{date | formatDate( 64 )}}
             </td>
         </tr>
